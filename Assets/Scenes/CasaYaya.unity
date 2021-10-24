@@ -278,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 225980454}
   - component: {fileID: 225980453}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: camera confiner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ Camera:
   far clip plane: 5000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -489,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563058085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71489644, y: -0.8596636, z: -10}
+  m_LocalPosition: {x: -0.8031614, y: -0.35993397, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -642,14 +642,14 @@ MonoBehaviour:
   m_Follow: {fileID: 135105708}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 4
+    OrthographicSize: 4.5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0291035, y: 1}
+    m_SensorSize: {x: 1.7840327, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
