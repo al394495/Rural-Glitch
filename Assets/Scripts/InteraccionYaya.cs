@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class InteraccionYaya : MonoBehaviour
 {
-    void OnTriggerStay2D(Collider2D other)
-    {
-        GerardController controller = other.GetComponent<GerardController>();
+    public GameObject Texto;
 
-        if (controller != null)
-        {
-            Debug.Log("Pulsa SPACE para interactuar");
-        }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Texto.SetActive(true); 
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        Texto.SetActive(false);
     }
 }
