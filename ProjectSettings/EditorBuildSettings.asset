@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CasaYaya.unity
     guid: 44ff9405a993b894fb25953dff095120
+  - enabled: 1
+    path: Assets/Scenes/Bosque.unity
+    guid: 9935edcdd0bfff14bb33941f957db09e
   m_configObjects: {}
