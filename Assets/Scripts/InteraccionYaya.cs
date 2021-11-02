@@ -8,7 +8,9 @@ public class InteraccionYaya : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true); 
+        Texto.SetActive(true);
+        if (Input.GetKeyDown(KeyCode.J))
+            GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 
     void OnTriggerExit2D(Collider2D other)
