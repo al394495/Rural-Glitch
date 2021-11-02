@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 607711710}
   - component: {fileID: 607711712}
   - component: {fileID: 607711713}
+  - component: {fileID: 607711715}
   - component: {fileID: 607711711}
   m_Layer: 0
   m_Name: yaya
@@ -705,6 +706,23 @@ RectTransform:
   m_AnchoredPosition: {x: 14.34, y: -1.93}
   m_SizeDelta: {x: 20, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &607711715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607711709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bef6fcacfc872248a6b9ee5f5a709bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Yaya
+    sentences:
+    - Texto1
+    - Texto2
 --- !u!1 &747512176
 GameObject:
   m_ObjectHideFlags: 0
