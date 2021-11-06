@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bosque.unity
     guid: 9935edcdd0bfff14bb33941f957db09e
+  - enabled: 1
+    path: "Assets/Scenes/Men\xFA.unity"
+    guid: 97abf54d8fbed904bb4b040bb99f38ad
   m_configObjects: {}

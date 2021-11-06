@@ -23,6 +23,14 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadScene("CasaYaya");
     }
 
+
+    public void Instrucciones()
+
+    {
+        SceneManager.LoadScene("Instrucciones");
+    }
+
+
     public void Salir()
     {
         Application.Quit();
