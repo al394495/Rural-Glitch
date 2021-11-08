@@ -511,6 +511,7 @@ MonoBehaviour:
   Texto: {fileID: 1401138692}
   cerca: 0
   dialogo: 0
+  puerta: {fileID: 1847158046}
 --- !u!224 &607711714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1959,7 +1960,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2004,7 +2005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2641c98fb2c2dd245a228e4993c1e893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yaya: {fileID: 607711709}
 --- !u!1 &2020225667
 GameObject:
   m_ObjectHideFlags: 0

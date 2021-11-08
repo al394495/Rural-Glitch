@@ -7,6 +7,7 @@ public class InteraccionYaya : MonoBehaviour
     public GameObject Texto;
     public bool cerca = false;
     public bool dialogo = false;
+    public GameObject puerta;
 
 
 
@@ -18,6 +19,7 @@ public class InteraccionYaya : MonoBehaviour
             {
                 FindObjectOfType<DialogueTrigger>().TriggerDialogue();
                 dialogo = true;
+                puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
             }
         }
 
