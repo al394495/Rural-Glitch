@@ -557,6 +557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747512177}
+  - component: {fileID: 747512178}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -587,6 +588,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &747512178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747512176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd6618d1547919468a9c5bff9d2ce0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen: {fileID: 2044207063}
+  menuabierto: 0
+  botonchat: {fileID: 1034031054}
+  botoninternet: {fileID: 2020225667}
+  botonconfiguracion: {fileID: 1608394811}
 --- !u!1 &973971669
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +871,6 @@ GameObject:
   - component: {fileID: 1034031058}
   - component: {fileID: 1034031057}
   - component: {fileID: 1034031056}
-  - component: {fileID: 1034031059}
   m_Layer: 5
   m_Name: Icono chat
   m_TagString: Untagged
@@ -925,9 +942,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1034031059}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: Pulsarboton
+      - m_Target: {fileID: 747512178}
+        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
+        m_MethodName: PulsarbotonChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -975,21 +992,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034031054}
   m_CullTransparentMesh: 1
---- !u!114 &1034031059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034031054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ccbca512ad874f4197135cfcff2af67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boton1: {fileID: 1034031054}
-  boton2: {fileID: 2020225667}
-  boton3: {fileID: 1608394811}
 --- !u!1 &1057058506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2089,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2020225670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 747512178}
+        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
+        m_MethodName: PulsarBotonInternet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2020225670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,6 +2151,8 @@ GameObject:
   - component: {fileID: 2044207066}
   - component: {fileID: 2044207065}
   - component: {fileID: 2044207064}
+  - component: {fileID: 2044207068}
+  - component: {fileID: 2044207067}
   m_Layer: 5
   m_Name: Movil
   m_TagString: Untagged
@@ -2198,9 +2214,43 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39, y: -7}
+  m_AnchoredPosition: {x: -85, y: -84}
   m_SizeDelta: {x: 567.5052, y: 567.5052}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &2044207067
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044207063}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &2044207068
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044207063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 38b0cb043c3a3fd4d8aa58de859c7636, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2100971614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,7 +2263,6 @@ GameObject:
   - component: {fileID: 2100971618}
   - component: {fileID: 2100971617}
   - component: {fileID: 2100971616}
-  - component: {fileID: 2100971615}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2221,23 +2270,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2100971615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100971614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd6618d1547919468a9c5bff9d2ce0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Imagen: {fileID: 2044207063}
-  boton1: {fileID: 1034031054}
-  boton2: {fileID: 2020225667}
-  boton3: {fileID: 1608394811}
-  menuabierto: 0
 --- !u!114 &2100971616
 MonoBehaviour:
   m_ObjectHideFlags: 0
