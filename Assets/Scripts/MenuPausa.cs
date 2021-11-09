@@ -5,14 +5,17 @@ using UnityEngine;
 public class MenuPausa : MonoBehaviour
 {
     public GameObject Imagen;
-    public GameObject boton1;
-    public GameObject boton2;
-    public GameObject boton3;
-    public bool menuabierto;
+    public bool menuabierto = false;
+
+    public GameObject botonchat;
+    public GameObject botoninternet;
+    public GameObject botonconfiguracion;
+
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = Imagen.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,25 +23,47 @@ public class MenuPausa : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Time.timeScale == 1.0f)
+            if (menuabierto == false)
             {
-                Time.timeScale = 0.0f;
                 Imagen.SetActive(true);
-                boton1.SetActive(true);
-                boton2.SetActive(true);
-                boton3.SetActive(true);
+                botonchat.SetActive(true);
+                botoninternet.SetActive(true);
+                botonconfiguracion.SetActive(true);
                 menuabierto = true;
             }    
             else
             {
-                Time.timeScale = 1.0f;
                 Imagen.SetActive(false);
-                boton1.SetActive(false);
-                boton2.SetActive(false);
-                boton3.SetActive(false);
+                botonchat.SetActive(false);
+                botoninternet.SetActive(false);
+                botonconfiguracion.SetActive(false);
                 menuabierto = false;
             }
+
+          
+            if (animator.GetBool("Chat") == true || animator.GetBool("Internet") == true) {
+                
+                animator.SetBool("Chat", false);
+                animator.SetBool("Internet", false);
+            }
+            
         }
     }
-    
+
+    public void PulsarbotonChat()
+    {
+        botonchat.SetActive(false);
+        botoninternet.SetActive(false);
+        botonconfiguracion.SetActive(false);
+        animator.SetBool("Chat", true);
+    }
+
+    public void PulsarBotonInternet()
+    {
+        botonchat.SetActive(false);
+        botoninternet.SetActive(false);
+        botonconfiguracion.SetActive(false);
+        animator.SetBool("Internet", true);
+    }
+
 }
