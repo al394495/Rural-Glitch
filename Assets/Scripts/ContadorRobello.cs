@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class ContadorRobello : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Collectible"))
+        {
+            Collect(other.GetComponent<robello>());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Collect(robello collectible)
     {
-        
+        if (collectible.Collect())
+        {
+            if(collectible is robello)
+            {
+                Debug.Log("Ha cogido: robelló");
+            }
+        }
     }
 }
