@@ -14,7 +14,7 @@ public class robello : MonoBehaviour {
    
     private int contador;
     public Text ContadorRobello;
-
+    private Collider2D robelloPorCoger;
 
     // Use this for initialization
     private void Start()
@@ -28,7 +28,13 @@ public class robello : MonoBehaviour {
     private void Update()
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
-            PickUp();
+        {
+            
+            contador++;
+            
+            ContadorRobello.text = contador.ToString();
+            PickUp(robelloPorCoger);
+        }
             
             
     }
@@ -38,6 +44,7 @@ public class robello : MonoBehaviour {
 
         if (collision.gameObject.tag == "Collectible")
         {
+            robelloPorCoger = collision;
             pickUpText.gameObject.SetActive(true);
             pickUpAllowed = true;
             
@@ -60,11 +67,12 @@ public class robello : MonoBehaviour {
 
     }
 
-    private void PickUp()
+    private void PickUp(Collider2D borrar)
     {
-        contador++;
-        //Destroy(collision.gameObject);
-        ContadorRobello.text = contador.ToString();
+        //contador++;
+
+        Destroy(borrar.gameObject);
+        //ContadorRobello.text = contador.ToString();
     }
 
 
