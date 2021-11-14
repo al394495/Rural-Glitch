@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectible
+  - NonCollectible
   layers:
   - Default
   - TransparentFX
