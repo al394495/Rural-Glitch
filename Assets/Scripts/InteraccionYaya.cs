@@ -17,7 +17,7 @@ public class InteraccionYaya : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+                FindObjectOfType<DialogueTriggerYaya>().TriggerDialogueYaya();
                 dialogo = true;
                 puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
             }
