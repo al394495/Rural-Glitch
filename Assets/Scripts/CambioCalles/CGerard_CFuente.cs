@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InteracciónPuerta : MonoBehaviour
+public class CGerard_CFuente : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
@@ -16,7 +16,7 @@ public class InteracciónPuerta : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("CalleTienda");
+                SceneManager.LoadScene("CalleFuente");
             }
         }
     }
