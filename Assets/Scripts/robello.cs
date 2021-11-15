@@ -12,7 +12,7 @@ public class robello : MonoBehaviour {
 
     private bool pickUpAllowed;
    
-    private int contador;
+    public static int contadorRobellons;
     public Text ContadorRobello;
     private Collider2D robelloPorCoger;
 
@@ -29,10 +29,10 @@ public class robello : MonoBehaviour {
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
+
+            contadorRobellons++;
             
-            contador++;
-            
-            ContadorRobello.text = contador.ToString();
+            ContadorRobello.text = contadorRobellons.ToString();
             PickUp(robelloPorCoger);
         }
             

@@ -13,6 +13,11 @@ public class DialogueTriggerYaya : MonoBehaviour
         if(InteraccionYaya.dialogo == false)
             FindObjectOfType<DialogueManager>().StartDialogue(dialogoInicial);
         else
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogoNoRebollons);
+        {
+            if (robello.contadorRobellons < 5)
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogoNoRebollons);
+            else
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogoRebollons);
+        } 
     }
 }
