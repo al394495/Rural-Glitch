@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InteracciónPuerta : MonoBehaviour
+public class CFuente_CTienda : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
