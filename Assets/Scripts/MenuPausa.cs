@@ -21,32 +21,36 @@ public class MenuPausa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (DialogueManager.DialogoActivo == false)
         {
-            if (menuabierto == false)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Imagen.SetActive(true);
-                botonchat.SetActive(true);
-                botoninternet.SetActive(true);
-                botonconfiguracion.SetActive(true);
-                menuabierto = true;
-            }    
-            else
-            {
-                Imagen.SetActive(false);
-                botonchat.SetActive(false);
-                botoninternet.SetActive(false);
-                botonconfiguracion.SetActive(false);
-                menuabierto = false;
-            }
+                if (menuabierto == false)
+                {
+                    Imagen.SetActive(true);
+                    botonchat.SetActive(true);
+                    botoninternet.SetActive(true);
+                    botonconfiguracion.SetActive(true);
+                    menuabierto = true;
+                }
+                else
+                {
+                    Imagen.SetActive(false);
+                    botonchat.SetActive(false);
+                    botoninternet.SetActive(false);
+                    botonconfiguracion.SetActive(false);
+                    menuabierto = false;
+                }
 
-          
-            if (animator.GetBool("Chat") == true || animator.GetBool("Internet") == true) {
-                
-                animator.SetBool("Chat", false);
-                animator.SetBool("Internet", false);
+
+                if (animator.GetBool("Chat") == true || animator.GetBool("Internet") == true)
+                {
+
+                    animator.SetBool("Chat", false);
+                    animator.SetBool("Internet", false);
+                }
+
             }
-            
         }
     }
 
