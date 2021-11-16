@@ -7,7 +7,7 @@ public class InteracciónVendedor : MonoBehaviour
     public GameObject Texto;
     public bool cerca = false;
     public bool dialogo = false;
-    //public GameObject puerta;
+    public GameObject Menu;
 
 
 
@@ -15,7 +15,7 @@ public class InteracciónVendedor : MonoBehaviour
     {
         if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
                 FindObjectOfType<DialogueTrigger>().TriggerDialogue();
                 dialogo = true;

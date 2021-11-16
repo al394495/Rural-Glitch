@@ -7,6 +7,7 @@ public class CGerard_CFuente : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
+    public GameObject Menu;
 
 
 
@@ -14,7 +15,7 @@ public class CGerard_CFuente : MonoBehaviour
     {
         if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
                 SceneManager.LoadScene("CalleFuente");
             }

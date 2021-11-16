@@ -1162,6 +1162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 673383676}
   ContadorRobello: {fileID: 1975437890}
+  Menu: {fileID: 864031919}
 --- !u!114 &649499915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 673383676}
   Bocadillo: {fileID: 2007811401}
+  Menu: {fileID: 864031919}
 --- !u!1 &673383674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,11 +2499,11 @@ RectTransform:
   m_Father: {fileID: 729562765}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -397, y: 182}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.25, y: 0.5}
 --- !u!114 &1220538092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3119,7 +3121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -343.39832, y: 116.2}
+  m_AnchoredPosition: {x: -364, y: 142}
   m_SizeDelta: {x: 86.8192, y: 86.8192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868172818
@@ -3312,7 +3314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -284.3, y: 111.34533}
+  m_AnchoredPosition: {x: -304.90167, y: 137.14534}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975437890

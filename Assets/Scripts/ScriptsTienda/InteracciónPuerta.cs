@@ -7,6 +7,7 @@ public class InteracciónPuerta : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
+    public GameObject Menu;
 
 
 
@@ -14,7 +15,7 @@ public class InteracciónPuerta : MonoBehaviour
     {
         if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
                 SceneManager.LoadScene("CalleTienda");
             }
