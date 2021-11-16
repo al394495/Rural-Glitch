@@ -18,8 +18,9 @@ public class GerardController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        transform.position = position;
 
-        rigidbody2d.MovePosition(position);
+        //rigidbody2d.MovePosition(position);
     }
 }
 
