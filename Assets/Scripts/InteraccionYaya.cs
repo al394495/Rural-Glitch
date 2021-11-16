@@ -8,6 +8,7 @@ public class InteraccionYaya : MonoBehaviour
     public bool cerca = false;
     public static bool dialogo = false;
     public GameObject puerta;
+    public GameObject Menu;
 
 
 
@@ -15,7 +16,7 @@ public class InteraccionYaya : MonoBehaviour
     {
         if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
                 FindObjectOfType<DialogueTriggerYaya>().TriggerDialogueYaya();
                 dialogo = true;

@@ -511,6 +511,7 @@ MonoBehaviour:
   Texto: {fileID: 1401138692}
   cerca: 0
   puerta: {fileID: 1847158046}
+  Menu: {fileID: 747512176}
 --- !u!224 &607711714
 RectTransform:
   m_ObjectHideFlags: 0

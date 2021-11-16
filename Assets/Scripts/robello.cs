@@ -16,6 +16,8 @@ public class robello : MonoBehaviour {
     public Text ContadorRobello;
     private Collider2D robelloPorCoger;
 
+    public GameObject Menu;
+
     // Use this for initialization
     private void Start()
 
@@ -27,7 +29,7 @@ public class robello : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E) && Menu.GetComponent<MenuPausa>().menuabierto == false)
         {
 
             contadorRobellons++;

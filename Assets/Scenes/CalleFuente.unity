@@ -623,6 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 304415701}
   cerca: 0
+  Menu: {fileID: 2003320624}
 --- !u!1 &571069565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 165870412}
   cerca: 0
+  Menu: {fileID: 2003320624}
 --- !u!1001 &1138306396
 PrefabInstance:
   m_ObjectHideFlags: 0
