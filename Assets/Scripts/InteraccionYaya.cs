@@ -20,13 +20,17 @@ public class InteraccionYaya : MonoBehaviour
             {
                 FindObjectOfType<DialogueTriggerYaya>().TriggerDialogueYaya();
                 dialogo = true;
-                puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
             }
         }
 
         if (dialogo && Input.GetKeyDown(KeyCode.E))
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
+        }
+
+        if (dialogo == true)
+        {
+            puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
         }
     }
 
