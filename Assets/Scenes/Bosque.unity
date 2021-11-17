@@ -352,6 +352,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 950944140872593920, guid: 035c6ba32e8372845a3dc4d9df43d819, type: 3}
   m_PrefabInstance: {fileID: 7267710497776196940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &129804752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4140736069536721184, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
+  m_PrefabInstance: {fileID: 737483596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &129804753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129804752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311b86cd7a8c4924bbae1a4c5bf713b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &156406347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1628,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1633450675711367626, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633450675711367626, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
       value: -45.495167
       objectReference: {fileID: 0}
@@ -1644,7 +1665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4140736069536721184, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
       propertyPath: m_Name
-      value: Limite(Pueblo)
+      value: Limite(CasaGerard)
       objectReference: {fileID: 0}
     - target: {fileID: 4389735777099846103, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
       propertyPath: m_RootOrder
@@ -2850,7 +2871,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 4.075554, y: 3.347767}
-      - {x: -40.471, y: 3.3017516}
+      - {x: -40.488243, y: 3.405201}
       - {x: -40.40927, y: -5.679596}
       - {x: 4.036667, y: -5.6478844}
 --- !u!4 &1279887610
