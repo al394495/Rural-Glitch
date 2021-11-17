@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class InteraccionCasaGerard : MonoBehaviour
+public class InteracciónHabitación : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
@@ -17,7 +16,7 @@ public class InteraccionCasaGerard : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
-                SceneManager.LoadScene("CasaGerard");
+                Debug.Log("Se va a dormir");
             }
         }
     }
