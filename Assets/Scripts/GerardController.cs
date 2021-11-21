@@ -5,6 +5,7 @@ using UnityEngine;
 public class GerardController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,11 @@ public class GerardController : MonoBehaviour
     {
         if (DialogueManager.DialogoActivo == false)
         {
+            
             float horizontal = Input.GetAxis("Horizontal");
+
+            animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
             Vector2 position = transform.position;
             position.x = position.x + 3.0f * horizontal * Time.deltaTime;
             transform.position = position;
