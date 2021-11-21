@@ -6,7 +6,8 @@ public class GerardController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
     public Animator animator;
-
+    float horizontal = 0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,12 @@ public class GerardController : MonoBehaviour
         if (DialogueManager.DialogoActivo == false)
         {
             
-            float horizontal = Input.GetAxis("Horizontal");
+            horizontal = Input.GetAxisRaw("Horizontal");
 
             animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
             Vector2 position = transform.position;
+            
             position.x = position.x + 3.0f * horizontal * Time.deltaTime;
             transform.position = position;
 
