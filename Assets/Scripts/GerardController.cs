@@ -20,9 +20,7 @@ public class GerardController : MonoBehaviour
         if (DialogueManager.DialogoActivo == false)
         {
             
-            horizontal = Input.GetAxisRaw("Horizontal");
-
-            animator.SetFloat("Speed", Mathf.Abs(horizontal));
+            
 
             Vector2 position = transform.position;
             
@@ -31,6 +29,24 @@ public class GerardController : MonoBehaviour
 
             //rigidbody2d.MovePosition(position);
         }
+
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
+        if (horizontal > 0.0f)
+        {
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        }
+
+        if (horizontal < 0.0f)
+        {
+
+            transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
+
+        }
     }
+
+
 }
 
