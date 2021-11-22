@@ -11,28 +11,26 @@ public class GerardController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //rigidbody2d = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (DialogueManager.DialogoActivo == false)
         {
-            
-            
+            horizontal = Input.GetAxisRaw("Horizontal");
+            Vector2 position = rigidbody2d.position;
+            animator.SetFloat("Speed", Mathf.Abs(horizontal));
+            position.x = position.x + 3.0f * horizontal * Time.fixedDeltaTime;
+            //transform.position = position;
 
-            Vector2 position = transform.position;
-            
-            position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-            transform.position = position;
-
-            //rigidbody2d.MovePosition(position);
+            rigidbody2d.MovePosition(position);
         }
 
-        horizontal = Input.GetAxisRaw("Horizontal");
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        
 
         if (horizontal > 0.0f)
         {
