@@ -62,22 +62,22 @@ public class MenuPausa : MonoBehaviour
 
     public void PulsarbotonChat()
     {
+        animator.SetBool("Chat", true);
         botonchat.SetActive(false);
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
         botonatras.SetActive(true);
-        animator.SetBool("Chat", true);
     }
 
     public void PulsarBotonInternet()
     {
+        animator.SetBool("Internet", true);
         botonchat.SetActive(false);
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
         botonatras.SetActive(true);
-        animator.SetBool("Internet", true);
     }
 
     public void PulsarBotonSalida()
@@ -87,13 +87,13 @@ public class MenuPausa : MonoBehaviour
 
     public void PulsarBotonAtras()
     {
+        animator.SetBool("Chat", false);
+        animator.SetBool("Internet", false);
         botonatras.SetActive(false);
         botonchat.SetActive(true);
         botoninternet.SetActive(true);
         botonconfiguracion.SetActive(true);
         botonsalida.SetActive(true);
-        animator.SetBool("Chat", false);
-        animator.SetBool("Internet", false);
     }
 
 }
