@@ -5,10 +5,16 @@ using UnityEngine.UI;
 
 public class BotonTexto : MonoBehaviour
 {
-    public Text text;
+    public Text numero;
 
-    public void CambiaTexto(string texto)
+    public void CambiaTexto(string newNumero)
     {
-        text.text = texto;
+        numero.text = newNumero;
+        
+    }
+
+    public void Prueba()
+    {
+        Debug.Log("Prueba");
     }
 }

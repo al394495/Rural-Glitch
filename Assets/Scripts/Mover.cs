@@ -7,6 +7,7 @@ public class Mover : MonoBehaviour
 
     private bool estaMoviendose;
     public GameObject Moneda;
+    public static int contador = 0;
 
     public void OnMouseDown()
     {
@@ -18,6 +19,7 @@ public class Mover : MonoBehaviour
         estaMoviendose = false;
     }
 
+
     void Update()
     {
         if (estaMoviendose)
@@ -25,11 +27,18 @@ public class Mover : MonoBehaviour
             Vector2 posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             transform.Translate(posicionRaton);
         }
+
+        //if (contador == 3)
+        //{
+        //Debug.Log("3 monedas");
+        //}
+
+        Debug.Log(contador);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("XD");
         Moneda.GetComponent<Renderer>().enabled = false;
+        contador++;
     }
 }
