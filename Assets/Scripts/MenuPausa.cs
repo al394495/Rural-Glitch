@@ -12,6 +12,7 @@ public class MenuPausa : MonoBehaviour
     public GameObject botoninternet;
     public GameObject botonconfiguracion;
     public GameObject botonsalida;
+    public GameObject botonatras;
 
     Animator animator;
     // Start is called before the first frame update
@@ -43,6 +44,7 @@ public class MenuPausa : MonoBehaviour
                     botoninternet.SetActive(false);
                     botonconfiguracion.SetActive(false);
                     botonsalida.SetActive(false);
+                    botonatras.SetActive(false);
                     menuabierto = false;
                 }
 
@@ -64,6 +66,7 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonatras.SetActive(true);
         animator.SetBool("Chat", true);
     }
 
@@ -73,12 +76,24 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonatras.SetActive(true);
         animator.SetBool("Internet", true);
     }
 
     public void PulsarBotonSalida()
     {
         SceneManager.LoadScene("Menú");
+    }
+
+    public void PulsarBotonAtras()
+    {
+        botonatras.SetActive(false);
+        botonchat.SetActive(true);
+        botoninternet.SetActive(true);
+        botonconfiguracion.SetActive(true);
+        botonsalida.SetActive(true);
+        animator.SetBool("Chat", false);
+        animator.SetBool("Internet", false);
     }
 
 }

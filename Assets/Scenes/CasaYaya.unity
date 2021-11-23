@@ -449,6 +449,7 @@ MonoBehaviour:
   botoninternet: {fileID: 2020225667}
   botonconfiguracion: {fileID: 1608394811}
   botonsalida: {fileID: 2138799014}
+  botonatras: {fileID: 918299649}
 --- !u!1 &790889797
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &918299650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -630,7 +631,7 @@ RectTransform:
   m_GameObject: {fileID: 918299649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.56043, y: 0.56043, z: 0.56043}
+  m_LocalScale: {x: 0.41896063, y: 0.41896063, z: 0.41896063}
   m_Children:
   - {fileID: 1241131122}
   m_Father: {fileID: 747512177}
@@ -638,7 +639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: 131}
+  m_AnchoredPosition: {x: -80.4, y: 142.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918299651
@@ -684,7 +685,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 918299652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 747512178}
+        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
+        m_MethodName: PulsarBotonAtras
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &918299652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,7 +1008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1034031055
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1824,7 +1837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1608394812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2313,7 +2326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2020225668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2447,7 +2460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2044207064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2659,7 +2672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2138799015
 RectTransform:
   m_ObjectHideFlags: 0
