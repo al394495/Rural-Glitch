@@ -6,7 +6,7 @@ public class ArdillaController : MonoBehaviour
 {
     public float speed;
     public bool vertical;
-    public float changeTime = 3.0f;
+    public float changeTime = 7.0f;
 
     Rigidbody2D rigidbody2D;
     float timer;
