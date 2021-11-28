@@ -36,6 +36,7 @@ public class MenuPausa : MonoBehaviour
                     botonconfiguracion.SetActive(true);
                     botonsalida.SetActive(true);
                     menuabierto = true;
+                    hud.mensaje = false;
                 }
                 else
                 {
