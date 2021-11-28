@@ -1204,7 +1204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.3344116, y: -0.097668886}
+  m_Offset: {x: -12.365032, y: -0.43010935}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1215,7 +1215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 41.421783, y: 0.8046622}
+  m_Size: {x: 101.52984, y: 0.53870994}
   m_EdgeRadius: 0
 --- !u!4 &555674904
 Transform:
@@ -1484,10 +1484,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 14.97069, y: 0.3148611}
-      - {x: 6.240407, y: 0.2876253}
-      - {x: 4.1865473, y: 0.4207121}
-      - {x: 2.461214, y: 0.9943827}
+    - - {x: 4.2398257, y: 0.27381557}
+      - {x: 4.5525823, y: 0.25019252}
+      - {x: 8.120864, y: 0.39956725}
+      - {x: 4.1696496, y: 0.59959215}
+      - {x: 3.4792652, y: 1.0096071}
+      - {x: 2.5049787, y: 1.3663824}
+      - {x: 1.7658043, y: 1.6369241}
       - {x: 0.8144806, y: 1.8315524}
       - {x: -6.308508, y: 4.2095804}
       - {x: -9.887519, y: 4.415576}
@@ -1510,9 +1513,9 @@ PolygonCollider2D:
       - {x: -9.947957, y: 3.1918046}
       - {x: -5.1978383, y: 2.586866}
       - {x: 0.35537803, y: 1.1952041}
-      - {x: 1.2330223, y: 0.79702884}
-      - {x: 2.069899, y: 0.19309413}
-      - {x: 15.087571, y: -0.86084646}
+      - {x: 1.3560642, y: 1.1238586}
+      - {x: 1.6677651, y: 1.0051199}
+      - {x: 3.6461554, y: 0.3429798}
 --- !u!4 &718306956
 Transform:
   m_ObjectHideFlags: 0
@@ -1954,7 +1957,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5992293, y: 1}
+    m_SensorSize: {x: 1.6008065, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3732,6 +3735,8 @@ GameObject:
   - component: {fileID: 1743076936}
   - component: {fileID: 1743076935}
   - component: {fileID: 1743076934}
+  - component: {fileID: 1743076938}
+  - component: {fileID: 1743076939}
   m_Layer: 0
   m_Name: Ardilla-1
   m_TagString: Untagged
@@ -3752,7 +3757,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.48695123, y: 0.12173259}
+  m_Offset: {x: 0.2548902, y: -1.1546012}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3763,7 +3768,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.41074, y: 3.6803272}
+  m_Size: {x: 2.5542521, y: 1.1276596}
   m_EdgeRadius: 0
 --- !u!50 &1743076935
 Rigidbody2D:
@@ -3852,6 +3857,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743076938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743076933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6233987ac6d152478c568eaa3acdb0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  vertical: 0
+  changeTime: 8
+  animator: {fileID: 1743076939}
+--- !u!95 &1743076939
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743076933}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d5721281fae5c3418f7bf7381453af0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1779586773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,7 +4242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870256292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0088579655, y: -0.297544, z: -10}
+  m_LocalPosition: {x: 0.001761198, y: -0.297544, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
