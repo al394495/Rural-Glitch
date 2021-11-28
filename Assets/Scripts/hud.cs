@@ -5,7 +5,7 @@ using UnityEngine;
 public class hud : MonoBehaviour
 {
     private float amount = 500.0f;
-    private bool mensaje = false;
+    public static bool mensaje = false;
 
     // Start is called before the first frame update
     void Start()

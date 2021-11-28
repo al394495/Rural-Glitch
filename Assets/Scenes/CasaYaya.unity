@@ -511,6 +511,7 @@ MonoBehaviour:
     name: Yaya
     sentences:
     - Gracias nietecito
+    - Ahora necesito que vayas a la tienda del pueblo a por unos refrescos.
 --- !u!61 &790889800
 BoxCollider2D:
   m_ObjectHideFlags: 0
