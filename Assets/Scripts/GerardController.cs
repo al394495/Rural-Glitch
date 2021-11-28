@@ -12,12 +12,97 @@ public class GerardController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        Vector2 positionIni = transform.position;
+
+        //Controlar posicion incial de gerard en cada escena
+        if (MainMenuScript.cambio == "inicio-casaYaya")
+        {
+            positionIni.x = -5;
+            positionIni.y = -3.18f;
+        }
+
+        else if (MainMenuScript.cambio == "casaYaya-bosque")
+        {
+            positionIni.x = 2;
+            positionIni.y = -3.18f;
+        }
+
+        else if (MainMenuScript.cambio == "bosque-casaYaya")
+        {
+            positionIni.x = -7.8f;
+            positionIni.y = -3.18f;
+        }
+
+        else if (MainMenuScript.cambio == "bosque-casaGerard")
+        {
+            positionIni.x = -4.56f;
+            positionIni.y = -3.49f;
+        }
+
+        else if (MainMenuScript.cambio == "casaGerard-bosque")
+        {
+            positionIni.x = -36;
+            positionIni.y = -2.9f;
+        }
+
+        else if (MainMenuScript.cambio == "casaGerard-calleGerard")
+        {
+            positionIni.x = 14.54f;
+            positionIni.y = -2.62f;
+        }
+
+        else if (MainMenuScript.cambio == "calleGerard-casaGerard")
+        {
+            positionIni.x = 5.1f;
+            positionIni.y = -3.49f;
+        }
+
+        else if (MainMenuScript.cambio == "calleGerard-calleFuente")
+        {
+            positionIni.x = 16.35f;
+            positionIni.y = -3.59f;
+        }
+
+        else if (MainMenuScript.cambio == "calleFuente-calleGerard")
+        {
+            positionIni.x = 20.43f;
+            positionIni.y = -2.62f;
+        }
+
+        else if (MainMenuScript.cambio == "calleFuente-calleTienda")
+        {
+            positionIni.x = -7.3f;
+            positionIni.y = -3.29f;
+        }
+
+        else if (MainMenuScript.cambio == "calleTienda-calleFuente")
+        {
+            positionIni.x = 4.4f;
+            positionIni.y = -3.59f;
+        }
+
+        else if (MainMenuScript.cambio == "calleTienda-tienda")
+        {
+            positionIni.x = -5f;
+            positionIni.y = -3.35f;
+        }
+
+        else if (MainMenuScript.cambio == "tienda-calleTienda")
+        {
+            positionIni.x = -3.6f;
+            positionIni.y = -3.29f;
+        }
+
+        //Falta para la central
+
+        transform.position = positionIni;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (DialogueManager.DialogoActivo == false)
         {
             horizontal = Input.GetAxisRaw("Horizontal");

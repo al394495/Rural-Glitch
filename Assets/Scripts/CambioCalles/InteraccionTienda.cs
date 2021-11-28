@@ -17,6 +17,7 @@ public class InteraccionTienda : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
+                MainMenuScript.cambio = "calleTienda-tienda";
                 SceneManager.LoadScene("Tienda");
             }
         }

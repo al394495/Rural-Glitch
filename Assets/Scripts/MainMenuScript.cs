@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public static string cambio = "inicio-casaYaya";
     // Start is called before the first frame update
     void Start()
     {

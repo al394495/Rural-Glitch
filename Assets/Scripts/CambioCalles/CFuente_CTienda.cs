@@ -17,6 +17,7 @@ public class CFuente_CTienda : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
+                MainMenuScript.cambio = "calleFuente-calleTienda";
                 SceneManager.LoadScene("CalleTienda");
             }
         }
