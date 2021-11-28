@@ -9,6 +9,7 @@ public class Bosque_CasaG : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            MainMenuScript.cambio = "bosque-casaGerard";
             SceneManager.LoadScene("CasaGerard");
         }
     }

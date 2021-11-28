@@ -9,6 +9,7 @@ public class CambioEscena2 : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            MainMenuScript.cambio = "bosque-casaYaya";
             SceneManager.LoadScene("CasaYaya");
         }
     }

@@ -17,6 +17,7 @@ public class CGerard_CFuente : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
+                MainMenuScript.cambio = "calleGerard-calleFuente";
                 SceneManager.LoadScene("CalleFuente");
             }
         }

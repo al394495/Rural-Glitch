@@ -17,6 +17,7 @@ public class InteraccionCasaGerard : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
+                MainMenuScript.cambio = "calleGerard-casaGerard";
                 SceneManager.LoadScene("CasaGerard");
             }
         }
