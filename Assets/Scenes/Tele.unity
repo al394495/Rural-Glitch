@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 338069307}
   - component: {fileID: 338069306}
   - component: {fileID: 338069308}
+  - component: {fileID: 338069309}
   m_Layer: 0
   m_Name: mano
   m_TagString: Untagged
@@ -226,6 +227,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &338069309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338069305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300f22feb574f79419057fb74994cfbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 338069308}
+  click: 323
 --- !u!1 &454043463
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +335,7 @@ GameObject:
   - component: {fileID: 1544822047}
   - component: {fileID: 1544822046}
   - component: {fileID: 1544822045}
+  - component: {fileID: 1544822048}
   m_Layer: 0
   m_Name: TV_glitched-1
   m_TagString: Untagged
@@ -412,3 +428,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544822048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544822044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d77d861b11502549b45387df4a203a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1544822045}
+  click: 323
+  contador: 0
