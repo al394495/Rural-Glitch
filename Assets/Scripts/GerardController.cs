@@ -113,9 +113,13 @@ public class GerardController : MonoBehaviour
 
             rigidbody2d.MovePosition(position);
         }
+        else
+        {
+            animator.SetFloat("Speed", Mathf.Abs(0f));
+        }
 
 
-        
+
 
         if (horizontal > 0.0f)
         {
