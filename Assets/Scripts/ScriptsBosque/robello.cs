@@ -12,9 +12,9 @@ public class robello : MonoBehaviour {
 
     private bool pickUpAllowed;
    
-    public static int contadorRobellons;
+    public static int contadorRobellons = 0;
     public Text ContadorRobello;
-    private Collider2D robelloPorCoger;
+    public static GameObject robelloPorCoger;
 
     public GameObject Menu;
 
@@ -22,7 +22,7 @@ public class robello : MonoBehaviour {
     private void Start()
 
     {
-        
+        ContadorRobello.text = contadorRobellons.ToString();
         pickUpText.gameObject.SetActive(false);
     }
 
@@ -36,6 +36,7 @@ public class robello : MonoBehaviour {
             
             ContadorRobello.text = contadorRobellons.ToString();
             PickUp(robelloPorCoger);
+            //robelloPorCoger.SetActive(false);   //Probar con setActive
         }
             
             
@@ -46,7 +47,7 @@ public class robello : MonoBehaviour {
 
         if (collision.gameObject.tag == "Collectible")
         {
-            robelloPorCoger = collision;
+            robelloPorCoger = collision.gameObject;
             pickUpText.gameObject.SetActive(true);
             pickUpAllowed = true;
             
@@ -69,12 +70,10 @@ public class robello : MonoBehaviour {
 
     }
 
-    private void PickUp(Collider2D borrar)
+    private void PickUp(GameObject borrar)
     {
-        //contador++;
 
         Destroy(borrar.gameObject);
-        //ContadorRobello.text = contador.ToString();
     }
 
 

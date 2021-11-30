@@ -72,7 +72,7 @@ public class GerardController : MonoBehaviour
         else if (MainMenuScript.cambio == "calleFuente-calleTienda")
         {
             positionIni.x = -7.3f;
-            positionIni.y = -3.29f;
+            positionIni.y = -3.37f;
         }
 
         else if (MainMenuScript.cambio == "calleTienda-calleFuente")
@@ -90,7 +90,7 @@ public class GerardController : MonoBehaviour
         else if (MainMenuScript.cambio == "tienda-calleTienda")
         {
             positionIni.x = -3.6f;
-            positionIni.y = -3.29f;
+            positionIni.y = -3.37f;
         }
 
         //Falta para la central
