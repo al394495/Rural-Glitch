@@ -55,6 +55,7 @@ public class MenuPausa : MonoBehaviour
 
                     animator.SetBool("Chat", false);
                     animator.SetBool("Internet", false);
+                    animator.SetBool("Chat-Marta", false);
                 }
 
             }
@@ -90,6 +91,7 @@ public class MenuPausa : MonoBehaviour
     {
         animator.SetBool("Chat", false);
         animator.SetBool("Internet", false);
+        animator.SetBool("Chat-Marta", false);
         botonatras.SetActive(false);
         botonchat.SetActive(true);
         botoninternet.SetActive(true);
