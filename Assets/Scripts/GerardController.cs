@@ -51,6 +51,12 @@ public class GerardController : MonoBehaviour
             positionIni.y = -2.62f;
         }
 
+        else if (MainMenuScript.cambio == "tele-casaGerard")
+        {
+            positionIni.x = 3.32f;
+            positionIni.y = -3.49f;
+        }
+
         else if (MainMenuScript.cambio == "calleGerard-casaGerard")
         {
             positionIni.x = 5.1f;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteracciónTV : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class InteracciónTV : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
-                Debug.Log("Minijuego TV");
+                SceneManager.LoadScene("Tele");
             }
         }
     }
