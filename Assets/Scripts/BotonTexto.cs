@@ -9,12 +9,28 @@ public class BotonTexto : MonoBehaviour
 
     public void CambiaTexto(string newNumero)
     {
-        numero.text = newNumero;
-        
+        if (numero.text.Length == 0)
+        {
+            numero.text = newNumero;
+        }
+
+        else if (numero.text.Length == 1)
+        {
+            numero.text += newNumero;
+            checkiar();
+        }
+        else
+        {
+            numero.text = "";
+        }
     }
 
-    public void Prueba()
+    void checkiar()
     {
-        Debug.Log("Prueba");
+        if (Mover.contador == 3 && (numero.text == "17" || numero.text == "18"))
+        {
+            Debug.Log("XD");
+        }
     }
+
 }

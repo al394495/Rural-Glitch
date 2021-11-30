@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mover : MonoBehaviour
 {
@@ -28,12 +29,6 @@ public class Mover : MonoBehaviour
             transform.Translate(posicionRaton);
         }
 
-        //if (contador == 3)
-        //{
-        //Debug.Log("3 monedas");
-        //}
-
-        Debug.Log(contador);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
