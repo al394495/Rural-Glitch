@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CasaGerard.unity
     guid: d365bf3c93e32934eb15206e77a39886
   - enabled: 1
+    path: Assets/Scenes/Tele.unity
+    guid: 187a273c66acd5749b975cc13e1dd0fd
+  - enabled: 1
     path: Assets/Scenes/CalleGerard.unity
     guid: 648ce0b1d913cab4797486ad48bcdc8d
   - enabled: 1
@@ -35,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tienda.unity
     guid: 43b1c79f0dd3e134081c411a8fcbd964
+  - enabled: 1
+    path: Assets/Scenes/MaquinaExpendedora.unity
+    guid: 8ebd7453934deb34d94af1ec03033c9c
   m_configObjects: {}
