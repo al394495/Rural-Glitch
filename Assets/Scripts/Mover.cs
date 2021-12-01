@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mover : MonoBehaviour
 {
 
     private bool estaMoviendose;
-    public GameObject Moneda;
-    public static int contador = 0;
+    public BotonTexto BotonTexto;
 
     public void OnMouseDown()
     {
@@ -19,6 +19,11 @@ public class Mover : MonoBehaviour
         estaMoviendose = false;
     }
 
+    void Start()
+    {
+        BotonTexto = GameObject.FindWithTag("GameController").GetComponent<BotonTexto>();
+    }
+
 
     void Update()
     {
@@ -28,17 +33,11 @@ public class Mover : MonoBehaviour
             transform.Translate(posicionRaton);
         }
 
-        //if (contador == 3)
-        //{
-        //Debug.Log("3 monedas");
-        //}
-
-        Debug.Log(contador);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Moneda.GetComponent<Renderer>().enabled = false;
-        contador++;
+        Destroy(this.gameObject);
+        BotonTexto.contadorMonedas++;
     }
 }
