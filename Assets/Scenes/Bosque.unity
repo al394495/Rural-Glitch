@@ -1588,7 +1588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8369d420db38113409262272c70e5dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Limite: {fileID: 692246752}
   Contador: {fileID: 1975437888}
 --- !u!1 &718306954
 GameObject:
@@ -4281,6 +4280,7 @@ GameObject:
   - component: {fileID: 1868172817}
   - component: {fileID: 1868172819}
   - component: {fileID: 1868172818}
+  - component: {fileID: 1868172820}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -4345,6 +4345,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868172816}
   m_CullTransparentMesh: 1
+--- !u!114 &1868172820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868172816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90f3bf86974d7e4a95173ffb85c9a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Contador: {fileID: 1868172816}
 --- !u!1 &1870256292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,6 +4487,7 @@ GameObject:
   - component: {fileID: 1975437889}
   - component: {fileID: 1975437891}
   - component: {fileID: 1975437890}
+  - component: {fileID: 1975437892}
   m_Layer: 5
   m_Name: ContadorRobello
   m_TagString: Untagged
@@ -4542,6 +4556,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975437888}
   m_CullTransparentMesh: 1
+--- !u!114 &1975437892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975437888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90f3bf86974d7e4a95173ffb85c9a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Contador: {fileID: 1975437888}
 --- !u!4 &1983548297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775869971791374533, guid: a5eb8e3a848c2a1449b21d09be5bfc40, type: 3}

@@ -14,6 +14,7 @@ public class DialogueTriggerYaya : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogoInicial);
             hud.mensaje = true;
+            VariablesGlobales.minijuego1 = true;
         }
         else
         {
@@ -23,6 +24,8 @@ public class DialogueTriggerYaya : MonoBehaviour
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogoRebollons);
                 hud.mensaje = true;
+                VariablesGlobales.minijuego1 = false;
+                VariablesGlobales.minijuego1realizado = true;
             }
              
         } 
