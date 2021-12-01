@@ -99,6 +99,12 @@ public class GerardController : MonoBehaviour
             positionIni.y = -3.37f;
         }
 
+        else if (MainMenuScript.cambio == "maquina-tienda")
+        {
+            positionIni.x = -2.22f;
+            positionIni.y = -3.35f;
+        }
+
         //Falta para la central
 
         transform.position = positionIni;
