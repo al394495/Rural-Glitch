@@ -7,8 +7,7 @@ public class Mover : MonoBehaviour
 {
 
     private bool estaMoviendose;
-    public GameObject Moneda;
-    public static int contador = 0;
+    public BotonTexto BotonTexto;
 
     public void OnMouseDown()
     {
@@ -18,6 +17,11 @@ public class Mover : MonoBehaviour
     public void OnMouseUp()
     {
         estaMoviendose = false;
+    }
+
+    void Start()
+    {
+        BotonTexto = GameObject.FindWithTag("GameController").GetComponent<BotonTexto>();
     }
 
 
@@ -33,7 +37,7 @@ public class Mover : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Moneda.GetComponent<Renderer>().enabled = false;
-        contador++;
+        Destroy(this.gameObject);
+        BotonTexto.contadorMonedas++;
     }
 }
