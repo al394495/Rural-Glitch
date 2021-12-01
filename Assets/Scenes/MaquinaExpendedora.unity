@@ -595,6 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127674458}
   - component: {fileID: 127674457}
+  - component: {fileID: 127674459}
   m_Layer: 5
   m_Name: Barrera (3)
   m_TagString: Untagged
@@ -662,12 +663,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127674456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.549888, y: -0.0053361333, z: 0}
+  m_LocalPosition: {x: 10.54989, y: 0, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &127674459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127674456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20224f516d4adda48b0dbd2f1bd4d52a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &179208205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727963410}
   - component: {fileID: 727963409}
+  - component: {fileID: 727963411}
   m_Layer: 5
   m_Name: Barrera (7)
   m_TagString: Untagged
@@ -1933,12 +1954,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727963408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.549888, y: -6.183865, z: 0}
+  m_LocalPosition: {x: 10.54989, y: -6, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &727963411
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727963408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 710a7f4c0a8ffd149b741cbccb96fe97, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &860834336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,6 +2273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995538873}
   - component: {fileID: 995538872}
+  - component: {fileID: 995538874}
   m_Layer: 5
   m_Name: Barrera (2)
   m_TagString: Untagged
@@ -2300,12 +2341,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995538871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.057882, y: -0.0053361333, z: 0}
+  m_LocalPosition: {x: 7.057882, y: 0, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &995538874
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995538871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47466633a7cbce24a89946209b7f7975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1052706418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2937,6 +2997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1183608813}
   - component: {fileID: 1183608812}
+  - component: {fileID: 1183608814}
   m_Layer: 5
   m_Name: Barrera (4)
   m_TagString: Untagged
@@ -3004,12 +3065,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183608811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.094015144, y: -6.183865, z: 0}
+  m_LocalPosition: {x: -0.09401514, y: -6, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1183608814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183608811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 383aa4dacdaef374ca7a13cb20a16ce1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1216276338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289323826}
   - component: {fileID: 1289323825}
+  - component: {fileID: 1289323827}
   m_Layer: 5
   m_Name: Barrera (1)
   m_TagString: Untagged
@@ -3382,12 +3463,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289323824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4315677, y: -0.026681157, z: 0}
+  m_LocalPosition: {x: 3.431568, y: 0, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1289323827
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289323824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d3b27a68ce4215429bc9ff5dda50a13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1357788229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3639,6 +3739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411273586}
   - component: {fileID: 1411273585}
+  - component: {fileID: 1411273587}
   m_Layer: 5
   m_Name: Barrera (6)
   m_TagString: Untagged
@@ -3706,12 +3807,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411273584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.057882, y: -6.183865, z: 0}
+  m_LocalPosition: {x: 7.057882, y: -6, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1411273587
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411273584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f8d96c2cfe759d48aa746501c22f29a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1489512256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +4085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604636602}
   - component: {fileID: 1604636601}
+  - component: {fileID: 1604636603}
   m_Layer: 5
   m_Name: Barrera
   m_TagString: Untagged
@@ -4032,12 +4153,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604636600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.094015144, y: -0.0053361333, z: 0}
+  m_LocalPosition: {x: -0.09401514, y: 0, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1604636603
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604636600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67259e398e7681846a65da0c01d5513e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1634884219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,6 +4879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750889730}
   - component: {fileID: 1750889729}
+  - component: {fileID: 1750889731}
   m_Layer: 5
   m_Name: Barrera (5)
   m_TagString: Untagged
@@ -4806,12 +4947,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750889728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4315677, y: -6.2052107, z: 0}
+  m_LocalPosition: {x: 3.431568, y: -6, z: 0}
   m_LocalScale: {x: 0.98489803, y: 1.003266, z: 2.1824532}
   m_Children: []
   m_Father: {fileID: 2015641451}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1750889731
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750889728}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9a3428ba4de5c340954a559fdbca45c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1789842756
 GameObject:
   m_ObjectHideFlags: 0
