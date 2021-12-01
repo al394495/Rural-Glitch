@@ -13,4 +13,16 @@ public class Bosque_CasaG : MonoBehaviour
             SceneManager.LoadScene("CasaGerard");
         }
     }
+
+    void Update()
+    {
+        if (VariablesGlobales.minijuego1 == true)
+        {
+            this.GetComponent<PolygonCollider2D>().isTrigger = false;
+        }
+        else
+        {
+            this.GetComponent<PolygonCollider2D>().isTrigger = true;
+        }
+    }
 }

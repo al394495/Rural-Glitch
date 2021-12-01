@@ -20,6 +20,7 @@ public class InteraccionYaya : MonoBehaviour
             {
                 FindObjectOfType<DialogueTriggerYaya>().TriggerDialogueYaya();
                 dialogo = true;
+                VariablesGlobales.minijuego1 = true;
             }
         }
 

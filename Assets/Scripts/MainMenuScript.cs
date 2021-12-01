@@ -22,7 +22,7 @@ public class MainMenuScript : MonoBehaviour
 
     {
         cambio = "inicio-casaYaya";
-        SceneManager.LoadScene("CasaYaya");
+        SceneManager.LoadScene("CasaGerard");
     }
 
 
