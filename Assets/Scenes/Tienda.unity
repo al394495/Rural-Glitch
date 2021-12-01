@@ -363,7 +363,7 @@ MonoBehaviour:
   Texto: {fileID: 1401138692}
   cerca: 0
   dialogo: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 1810262955}
 --- !u!114 &51758424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 1901315070}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 1810262955}
 --- !u!61 &184995109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 1780021291}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 1810262955}
 --- !u!61 &1530718051
 BoxCollider2D:
   m_ObjectHideFlags: 0

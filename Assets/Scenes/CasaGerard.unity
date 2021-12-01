@@ -438,7 +438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 1929917465}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 1779630093}
 --- !u!1001 &271994318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 835741558}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 1779630093}
 --- !u!61 &1640151399
 BoxCollider2D:
   m_ObjectHideFlags: 0
