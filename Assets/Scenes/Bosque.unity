@@ -2164,7 +2164,7 @@ PrefabInstance:
     - target: {fileID: 649499914, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Menu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 231642014}
     - target: {fileID: 649499914, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: pickUpText
       value: 
@@ -2176,7 +2176,7 @@ PrefabInstance:
     - target: {fileID: 649499915, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Menu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 231642014}
     - target: {fileID: 649499915, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Bocadillo
       value: 

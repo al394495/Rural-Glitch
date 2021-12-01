@@ -26,7 +26,7 @@ public class TeleController : MonoBehaviour
             contador++;
         }
 
-        if (contador == 5) {
+        if (contador >= 5) {
 
             anim.SetTrigger("TeleTrigger");
             iniciarContador();
