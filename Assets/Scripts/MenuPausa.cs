@@ -40,6 +40,10 @@ public class MenuPausa : MonoBehaviour
                 }
                 else
                 {
+                    animator.SetBool("Chat", false);
+                    animator.SetBool("Internet", false);
+                    animator.SetBool("Chat-Marta", false);
+                    animator.SetBool("Vacio", false);
                     Imagen.SetActive(false);
                     botonchat.SetActive(false);
                     botoninternet.SetActive(false);
@@ -48,23 +52,20 @@ public class MenuPausa : MonoBehaviour
                     botonatras.SetActive(false);
                     menuabierto = false;
                 }
-
-
-                if (animator.GetBool("Chat") == true || animator.GetBool("Internet") == true)
-                {
-
-                    animator.SetBool("Chat", false);
-                    animator.SetBool("Internet", false);
-                    animator.SetBool("Chat-Marta", false);
-                }
-
             }
         }
     }
 
     public void PulsarbotonChat()
     {
-        animator.SetBool("Chat", true);
+        if (VariablesGlobales.minijuego1 == true)
+        {
+            animator.SetBool("Chat", true);
+        }
+        else
+        {
+            animator.SetBool("Vacio", true);
+        }
         botonchat.SetActive(false);
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
@@ -92,6 +93,7 @@ public class MenuPausa : MonoBehaviour
         animator.SetBool("Chat", false);
         animator.SetBool("Internet", false);
         animator.SetBool("Chat-Marta", false);
+        animator.SetBool("Vacio", false);
         botonatras.SetActive(false);
         botonchat.SetActive(true);
         botoninternet.SetActive(true);

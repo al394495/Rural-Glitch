@@ -6,7 +6,6 @@ public class InteraccionYaya : MonoBehaviour
 {
     public GameObject Texto;
     public bool cerca = false;
-    public static bool dialogo = false;
     public GameObject puerta;
     public GameObject Menu;
 
@@ -19,18 +18,21 @@ public class InteraccionYaya : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false && DialogueManager.DialogoActivo == false)
             {
                 FindObjectOfType<DialogueTriggerYaya>().TriggerDialogueYaya();
-                dialogo = true;
             }
         }
 
-        if (dialogo && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
 
-        if (dialogo == true)
+        if ((VariablesGlobales.dialogoYaya1 == true && VariablesGlobales.minijuegoRealizado1 == false) || (VariablesGlobales.dialogoYaya2 == true && VariablesGlobales.minijuegoRealizado1 == true))
         {
             puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
+        }
+        else
+        {
+            puerta.GetComponent<PolygonCollider2D>().isTrigger = false;
         }
     }
 
