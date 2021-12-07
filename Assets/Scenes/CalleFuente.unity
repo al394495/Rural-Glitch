@@ -299,6 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111440073}
   - component: {fileID: 111440072}
+  - component: {fileID: 111440074}
   m_Layer: 0
   m_Name: Calle_Fuente
   m_TagString: Untagged
@@ -372,6 +373,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111440074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111440071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1fd12ff8b6e846a79e795e519068e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Marta: {fileID: 2071342303}
+  Josep: {fileID: 977714637}
+  Guillem: {fileID: 327262954}
 --- !u!1 &160370824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,7 +2714,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5991693, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3203,7 +3219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063261826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0242937, y: -0.06465888, z: -10}
+  m_LocalPosition: {x: -0.13125014, y: -0.06465888, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
