@@ -16,7 +16,11 @@ public class InteracciónHabitación : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
-                Debug.Log("Se va a dormir");
+                if (VariablesGlobales.minijuegoRealizado1 == true && VariablesGlobales.minijuegoRealizado2 == true)
+                {
+                    VariablesGlobales.Dia = 2;
+                    Debug.Log(VariablesGlobales.Dia);
+                }
             }
         }
     }
