@@ -826,6 +826,7 @@ MonoBehaviour:
   Texto: {fileID: 1516451489}
   cerca: 0
   dialogo: 0
+  interaccion: 0
   Menu: {fileID: 2084391226}
 --- !u!114 &327262959
 MonoBehaviour:
@@ -840,7 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Emo
+    name: Guillem
     sentences:
     - A mi me da igual quien gane hoy en el programa.
 --- !u!1 &362298986 stripped
@@ -1971,6 +1972,7 @@ MonoBehaviour:
   Texto: {fileID: 1516451489}
   cerca: 0
   dialogo: 0
+  interaccion: 0
   Menu: {fileID: 2084391226}
 --- !u!114 &977714642
 MonoBehaviour:
@@ -3386,6 +3388,7 @@ MonoBehaviour:
   Texto: {fileID: 1516451489}
   cerca: 0
   dialogo: 0
+  interaccion: 0
   Menu: {fileID: 2084391226}
 --- !u!114 &2071342308
 MonoBehaviour:

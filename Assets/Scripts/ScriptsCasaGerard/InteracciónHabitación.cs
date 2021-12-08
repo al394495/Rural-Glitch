@@ -18,8 +18,8 @@ public class InteracciónHabitación : MonoBehaviour
             {
                 if (VariablesGlobales.minijuegoRealizado1 == true && VariablesGlobales.minijuegoRealizado2 == true)
                 {
-                    VariablesGlobales.Dia = 2;
-                    Debug.Log(VariablesGlobales.Dia);
+                    VariablesGlobales.dia = 2;
+                    Debug.Log(VariablesGlobales.dia);
                 }
             }
         }
