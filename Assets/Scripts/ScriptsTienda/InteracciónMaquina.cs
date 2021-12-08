@@ -24,8 +24,11 @@ public class InteracciónMaquina : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
+        if (VariablesGlobales.bebidasRecogidas == false)
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
 
     }
 
