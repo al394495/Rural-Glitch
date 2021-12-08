@@ -33,6 +33,11 @@ public class ArdillaController : MonoBehaviour
             direction = -direction;
             timer = changeTime;
         }
+
+        if (VariablesGlobales.minijuegoRealizado3)
+        {
+            animator.SetBool("Glitched", true);
+        }
     }
 
     void FixedUpdate()

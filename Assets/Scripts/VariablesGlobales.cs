@@ -10,6 +10,7 @@ public class VariablesGlobales : MonoBehaviour
 
     public static bool minijuegoRealizado1 = false;
     public static bool minijuegoRealizado2 = false;
+    public static bool minijuegoRealizado3 = false;
 
     public static int dialogoYaya = 0;
     public static int amigos = 0;
