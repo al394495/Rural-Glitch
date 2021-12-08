@@ -11,8 +11,7 @@ public class VariablesGlobales : MonoBehaviour
     public static bool minijuegoRealizado1 = false;
     public static bool minijuegoRealizado2 = false;
 
-    public static bool dialogoYaya1 = false;
-    public static bool dialogoYaya2 = false;
+    public static int dialogoYaya = 0;
 
     public static bool bebidasRecogidas = false;
 }

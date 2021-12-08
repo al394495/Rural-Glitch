@@ -11,12 +11,12 @@ public class DialogueTriggerYaya : MonoBehaviour
 
     public void TriggerDialogueYaya()
     {
-        if (VariablesGlobales.dialogoYaya1 == false) 
+        if (VariablesGlobales.dialogoYaya == 0) 
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogoInicial);
             hud.mensaje = true;
             VariablesGlobales.minijuego1 = true;
-            VariablesGlobales.dialogoYaya1 = true;
+            VariablesGlobales.dialogoYaya = 1;
         }
         else if (VariablesGlobales.bebidasRecogidas == false)
         {
@@ -27,7 +27,7 @@ public class DialogueTriggerYaya : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogoRebollons);
                 hud.mensaje = true;
                 VariablesGlobales.minijuego1 = false;
-                VariablesGlobales.dialogoYaya2 = true;
+                VariablesGlobales.dialogoYaya = 2;
             } 
         }
         else

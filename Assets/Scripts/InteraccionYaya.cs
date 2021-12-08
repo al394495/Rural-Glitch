@@ -26,7 +26,7 @@ public class InteraccionYaya : MonoBehaviour
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
 
-        if ((VariablesGlobales.dialogoYaya1 == true && VariablesGlobales.minijuegoRealizado1 == false) || (VariablesGlobales.dialogoYaya2 == true && VariablesGlobales.minijuegoRealizado1 == true))
+        if ((VariablesGlobales.dialogoYaya == 1 && VariablesGlobales.minijuegoRealizado1 == false) || (VariablesGlobales.dialogoYaya == 2 && VariablesGlobales.minijuegoRealizado1 == true))
         {
             puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
         }
