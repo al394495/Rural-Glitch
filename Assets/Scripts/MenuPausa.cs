@@ -24,7 +24,7 @@ public class MenuPausa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DialogueManager.DialogoActivo == false)
+        /*if (DialogueManager.DialogoActivo == false)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -52,6 +52,37 @@ public class MenuPausa : MonoBehaviour
                     botonatras.SetActive(false);
                     menuabierto = false;
                 }
+            }
+        }*/
+    }
+
+    public void PulsarHUD()
+    {
+        if (DialogueManager.DialogoActivo == false)
+        {
+            if (menuabierto == false)
+            {
+                Imagen.SetActive(true);
+                botonchat.SetActive(true);
+                botoninternet.SetActive(true);
+                botonconfiguracion.SetActive(true);
+                botonsalida.SetActive(true);
+                menuabierto = true;
+                hud.mensaje = false;
+            }
+            else
+            {
+                animator.SetBool("Chat", false);
+                animator.SetBool("Internet", false);
+                animator.SetBool("Chat-Marta", false);
+                animator.SetBool("Vacio", false);
+                Imagen.SetActive(false);
+                botonchat.SetActive(false);
+                botoninternet.SetActive(false);
+                botonconfiguracion.SetActive(false);
+                botonsalida.SetActive(false);
+                botonatras.SetActive(false);
+                menuabierto = false;
             }
         }
     }
