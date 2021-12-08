@@ -39,6 +39,7 @@ public class TeleController : MonoBehaviour
         tiempoIni += Time.deltaTime;
         if (tiempoIni >= tiempoFin)
         {
+            VariablesGlobales.minijuegoRealizado3 = true;
             MainMenuScript.cambio = "tele-casaGerard";
             SceneManager.LoadScene("CasaGerard");
         }

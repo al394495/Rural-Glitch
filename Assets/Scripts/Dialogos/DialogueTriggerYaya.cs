@@ -7,17 +7,18 @@ public class DialogueTriggerYaya : MonoBehaviour
     public Dialogue dialogoInicial;
     public Dialogue dialogoNoRebollons;
     public Dialogue dialogoRebollons;
+    public Dialogue dialogoBebidas;
 
     public void TriggerDialogueYaya()
     {
-        if (VariablesGlobales.dialogoYaya1 == false) 
+        if (VariablesGlobales.dialogoYaya == 0) 
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogoInicial);
             hud.mensaje = true;
             VariablesGlobales.minijuego1 = true;
-            VariablesGlobales.dialogoYaya1 = true;
+            VariablesGlobales.dialogoYaya = 1;
         }
-        else
+        else if (VariablesGlobales.bebidasRecogidas == false)
         {
             if (robello.contadorRobellons < 5)
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogoNoRebollons);
@@ -26,9 +27,13 @@ public class DialogueTriggerYaya : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogoRebollons);
                 hud.mensaje = true;
                 VariablesGlobales.minijuego1 = false;
-                VariablesGlobales.dialogoYaya2 = true;
-            }
-             
-        } 
+                VariablesGlobales.dialogoYaya = 2;
+            } 
+        }
+        else
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogoBebidas);
+            VariablesGlobales.minijuegoRealizado2 = true;
+        }
     }
 }

@@ -7,6 +7,7 @@ public class InteraccionMarta : MonoBehaviour
     public GameObject Texto;
     public bool cerca = false;
     public bool dialogo = false;
+    public bool interaccion = false;
     public GameObject Menu;
 
     void Update()
@@ -17,6 +18,11 @@ public class InteraccionMarta : MonoBehaviour
             {
                 FindObjectOfType<DialogueTriggerMarta>().TriggerDialogue();
                 dialogo = true;
+                if (!interaccion)
+                {
+                    VariablesGlobales.amigos++;
+                    interaccion = true;
+                }
             }
         }
 

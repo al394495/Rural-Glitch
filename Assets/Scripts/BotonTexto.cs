@@ -137,6 +137,7 @@ public class BotonTexto : MonoBehaviour
         }
         if (contador >= 9)
         {
+            VariablesGlobales.bebidasRecogidas = true;
             MainMenuScript.cambio = "maquina-tienda";
             SceneManager.LoadScene("Tienda");
         }
