@@ -38,17 +38,15 @@ public class Setas : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject.tag == "NonCollectible")
+        if (VariablesGlobales.minijuego1 == true)
         {
-           
-            pickUpText.gameObject.SetActive(true);
-            pickUpAllowed = true;
+            if (collision.gameObject.tag == "NonCollectible")
+            {
 
-
+                pickUpText.gameObject.SetActive(true);
+                pickUpAllowed = true;
+            }
         }
-
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
