@@ -1351,6 +1351,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numero: {fileID: 0}
+  animacionBarrera0: {fileID: 0}
+  animacionBarrera1: {fileID: 0}
+  animacionBarrera2: {fileID: 0}
+  animacionBarrera3: {fileID: 0}
+  animacionBarrera4: {fileID: 0}
+  animacionBarrera5: {fileID: 0}
+  animacionBarrera6: {fileID: 0}
+  animacionBarrera7: {fileID: 0}
+  Areo: {fileID: 0}
+  Pipas: {fileID: 0}
+  Doroto: {fileID: 0}
+  Mikudo: {fileID: 0}
+  Cola: {fileID: 0}
+  Faint: {fileID: 0}
+  Tidient: {fileID: 0}
+  Pring: {fileID: 0}
+  contador: 0
+  contadorMonedas: 0
 --- !u!4 &1121292768
 Transform:
   m_ObjectHideFlags: 0
