@@ -23,7 +23,7 @@ public class Setas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E) && Menu.GetComponent<MenuPausa>().menuabierto == false)
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
         {
             Bocadillo.gameObject.SetActive(true);
         }

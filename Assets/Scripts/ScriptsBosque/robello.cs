@@ -29,7 +29,7 @@ public class robello : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E) && Menu.GetComponent<MenuPausa>().menuabierto == false)
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
         {
 
             contadorRobellons++;
