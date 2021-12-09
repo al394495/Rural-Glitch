@@ -16,13 +16,13 @@ public class hud : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        /*if (Input.GetKeyDown(KeyCode.K))
         {
             if (mensaje == false)
                 mensaje = true;
             else
                 mensaje = false;
-        }
+        }*/
         if (mensaje == true)
         {
             vibrar();

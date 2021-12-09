@@ -35,7 +35,7 @@ public class GerardController : MonoBehaviour
 
         else if (MainMenuScript.cambio == "bosque-casaGerard")
         {
-            positionIni.x = -4.56f;
+            positionIni.x = 5.1f;
             positionIni.y = -3.49f;
         }
 
@@ -53,13 +53,19 @@ public class GerardController : MonoBehaviour
 
         else if (MainMenuScript.cambio == "tele-casaGerard")
         {
-            positionIni.x = 3.32f;
+            positionIni.x = 3.8f;
+            positionIni.y = -3.49f;
+        }
+
+        else if (MainMenuScript.cambio == "glitches-casaGerard")
+        {
+            positionIni.x = -2.48f;
             positionIni.y = -3.49f;
         }
 
         else if (MainMenuScript.cambio == "calleGerard-casaGerard")
         {
-            positionIni.x = 5.1f;
+            positionIni.x = -4.56f;
             positionIni.y = -3.49f;
         }
 
