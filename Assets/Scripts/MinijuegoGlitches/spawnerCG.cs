@@ -16,7 +16,7 @@ public class spawnerCG : MonoBehaviour
         if (VariablesGlobales.dia == 3)
         {
             timer += Time.deltaTime;
-            if (timer >= 1.0f)
+            if (timer >= 0.5f)
             {
                 rand = Random.Range(-8.0f, 21.3f);
                 spawnPos.transform.position = new Vector3(rand, 1.6f, 0);
