@@ -6,10 +6,12 @@ public class ManoController : MonoBehaviour
 {
     public Animator anim;
     public KeyCode click;
-
+    
     // Start is called before the first frame update
     void Start()
     {
+
+        
         
     }
 
@@ -18,8 +20,10 @@ public class ManoController : MonoBehaviour
     {
 
         if (Input.GetKeyDown(click))
+        {
 
             anim.SetTrigger("Trigger");
-        
+            
+        }
     }
 }
