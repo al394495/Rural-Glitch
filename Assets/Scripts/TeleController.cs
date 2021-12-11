@@ -18,23 +18,34 @@ public class TeleController : MonoBehaviour
     {
         clickon = true;
         contador = 0;
+        clickon = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(click) && clickon) {
+
+        Debug.Log(clickon);
+        if (Input.GetKeyDown(click) && clickon == true) {
 
             contador++;
             clickon = false;
+            Debug.Log(contador);
+
         }
 
         if (contador >= 5) {
 
             anim.SetTrigger("TeleTrigger");
+          
             iniciarContador();
         }
 
+    }
+
+    private void activarclick()
+    {
+        clickon = true;
     }
 
     private void iniciarContador()
