@@ -16,6 +16,7 @@ public class TeleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        clickon = true;
         contador = 0;
         clickon = true;
     }
@@ -23,12 +24,14 @@ public class TeleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Debug.Log(clickon);
         if (Input.GetKeyDown(click) && clickon == true) {
 
             contador++;
             clickon = false;
             Debug.Log(contador);
+
         }
 
         if (contador >= 5) {
