@@ -9,6 +9,8 @@ public class Mover : MonoBehaviour
     private bool estaMoviendose;
     public BotonTexto BotonTexto;
 
+    public AudioSource coin;
+
     public void OnMouseDown()
     {
         estaMoviendose = true;
@@ -37,6 +39,7 @@ public class Mover : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        coin.Play();
         Destroy(this.gameObject);
         BotonTexto.contadorMonedas++;
     }

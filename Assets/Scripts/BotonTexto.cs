@@ -29,6 +29,8 @@ public class BotonTexto : MonoBehaviour
 
     public int contadorMonedas = 0;
 
+    public AudioSource Movimiento;
+
     public void CambiaTexto(string newNumero)
     {
         if (numero.text.Length == 0)
@@ -63,6 +65,7 @@ public class BotonTexto : MonoBehaviour
         if (numero.text == "17")
         {
             animacionBarrera4.SetBool("open4", true);
+            Movimiento.Play();
             if (contador >= 1.4)
             {
                 Cola.gravityScale = 1;
@@ -70,6 +73,7 @@ public class BotonTexto : MonoBehaviour
             if (contador >= 2.4)
             {
                 animacionBarrera5.SetBool("open5", true);
+                Movimiento.Play();
             }
             if (contador >= 3.8)
             {
@@ -79,6 +83,7 @@ public class BotonTexto : MonoBehaviour
         else if(numero.text == "18")
         {
             animacionBarrera5.SetBool("open5", true);
+            Movimiento.Play();
             if (contador >= 1.4)
             {
                 Faint.gravityScale = 1;
@@ -86,6 +91,7 @@ public class BotonTexto : MonoBehaviour
             if (contador >= 2.4)
             {
                 animacionBarrera4.SetBool("open4", true);
+                Movimiento.Play();
             }
             if (contador >= 3.8)
             {
@@ -96,18 +102,22 @@ public class BotonTexto : MonoBehaviour
         if (contador >= 4)
         {
             animacionBarrera2.SetBool("open2", true);
+            Movimiento.Play();
         }
         if (contador >= 4.5)
         {
             animacionBarrera7.SetBool("open7", true);
+            Movimiento.Play();
         }
         if (contador >= 5)
         {
             animacionBarrera1.SetBool("open1", true);
+            Movimiento.Play();
         }
         if (contador >= 5.5)
         {
             animacionBarrera3.SetBool("open3", true);
+            Movimiento.Play();
         }
         if (contador >= 5.2)
         {
@@ -120,12 +130,14 @@ public class BotonTexto : MonoBehaviour
         if(contador >= 6.3)
         {
             animacionBarrera0.SetBool("open0", true);
+            Movimiento.Play();
             Pipas.gravityScale = 1;
         }
         if (contador >= 6.7)
         {
             Mikudo.gravityScale = 1;
             animacionBarrera6.SetBool("open6", true);
+            Movimiento.Play();
         }
         if(contador >= 7.5)
         {

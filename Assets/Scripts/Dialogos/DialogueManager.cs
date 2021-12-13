@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource sonidoTexto;
+
     public Queue<string> sentences;
 
     public static bool DialogoActivo = false;
@@ -40,6 +42,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        //sonidoTexto.Play();
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -47,7 +50,18 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return StartCoroutine(WaitFor.Frames(5));
+        }
     }
 
     void EndDialogue()
@@ -55,5 +69,20 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", false);
 
         DialogoActivo = false;
+    }
+
+
+    
+}
+
+public static class WaitFor
+{
+    public static IEnumerator Frames(int frameCount)
+    {
+        while (frameCount > 0)
+        {
+            frameCount--;
+            yield return null;
+        }
     }
 }

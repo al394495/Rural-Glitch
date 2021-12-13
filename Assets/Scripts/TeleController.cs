@@ -13,6 +13,7 @@ public class TeleController : MonoBehaviour
     public float tiempoFin = 3;
     public bool clickon;
 
+
     // Start is called before the first frame update
     void Start()
     {

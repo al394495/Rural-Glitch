@@ -6,6 +6,7 @@ public class hud : MonoBehaviour
 {
     private float amount = 500.0f;
     public static bool mensaje = false;
+    public AudioSource Vibracion;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class hud : MonoBehaviour
         }*/
         if (mensaje == true)
         {
+            StartCoroutine(SonidoVibrar());
             vibrar();
         }
     }
@@ -35,6 +37,12 @@ public class hud : MonoBehaviour
         newPos.y = transform.position.y;
         newPos.z = transform.position.z;
         transform.position = newPos;
+    }
+
+    IEnumerator SonidoVibrar()
+    {
+        Vibracion.Play();
+        yield return new WaitForSeconds(2);
     }
 }
 
