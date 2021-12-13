@@ -13,6 +13,9 @@ public class TeleController : MonoBehaviour
     public float tiempoFin = 3;
     public bool clickon;
 
+    public AudioSource PasapalabraGlitch;
+    public AudioSource Pasapalabra;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +39,8 @@ public class TeleController : MonoBehaviour
         }
 
         if (contador >= 5) {
-
+            PasapalabraGlitch.Stop();
+            Pasapalabra.Play();
             anim.SetTrigger("TeleTrigger");
           
             iniciarContador();
