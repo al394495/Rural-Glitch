@@ -12,4 +12,9 @@ public class MenuInstrucciones : MonoBehaviour
         click.Play();
         SceneManager.LoadScene("Menú");
     }
+
+    public void Sonido()
+    {
+        click.Play();
+    }
 }
