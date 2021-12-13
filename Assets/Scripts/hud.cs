@@ -26,23 +26,22 @@ public class hud : MonoBehaviour
         }*/
         if (mensaje == true)
         {
-            StartCoroutine(SonidoVibrar());
             vibrar();
+        }
+        else
+        {
+            Vibracion.volume = 0f;
         }
     }
 
     void vibrar()
     {
+        Vibracion.volume = 0.5f;
         Vector3 newPos = Random.insideUnitSphere * (Time.deltaTime * amount);
         newPos.y = transform.position.y;
         newPos.z = transform.position.z;
         transform.position = newPos;
     }
 
-    IEnumerator SonidoVibrar()
-    {
-        Vibracion.Play();
-        yield return new WaitForSeconds(2);
-    }
 }
 

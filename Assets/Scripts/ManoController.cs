@@ -23,9 +23,13 @@ public class ManoController : MonoBehaviour
 
         if (Input.GetKeyDown(click))
         {
-            golpe.Play();
             anim.SetTrigger("Trigger");
             
         }
+    }
+
+    void PlayGolpe()
+    {
+        golpe.Play();
     }
 }

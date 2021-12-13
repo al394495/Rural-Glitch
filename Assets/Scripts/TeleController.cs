@@ -29,7 +29,7 @@ public class TeleController : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(clickon);
+        //Debug.Log(clickon);
         if (Input.GetKeyDown(click) && clickon == true) {
 
             contador++;
@@ -39,9 +39,10 @@ public class TeleController : MonoBehaviour
         }
 
         if (contador >= 5) {
-            PasapalabraGlitch.Stop();
-            anim.SetTrigger("TeleTrigger");
             
+            anim.SetTrigger("TeleTrigger");
+            PasapalabraGlitch.volume = 0f;
+            Pasapalabra.volume = 0.3f;
 
             iniciarContador();
         }
@@ -55,7 +56,6 @@ public class TeleController : MonoBehaviour
 
     private void iniciarContador()
     {
-        Pasapalabra.Play();
         tiempoIni += Time.deltaTime;
         if (tiempoIni >= tiempoFin)
         {
@@ -64,4 +64,5 @@ public class TeleController : MonoBehaviour
             SceneManager.LoadScene("CasaGerard");
         }
     }
+
 }
