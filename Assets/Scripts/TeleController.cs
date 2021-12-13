@@ -41,8 +41,7 @@ public class TeleController : MonoBehaviour
         if (contador >= 5) {
             
             anim.SetTrigger("TeleTrigger");
-            PasapalabraGlitch.volume = 0f;
-            Pasapalabra.volume = 0.3f;
+            
 
             iniciarContador();
         }
@@ -56,6 +55,8 @@ public class TeleController : MonoBehaviour
 
     private void iniciarContador()
     {
+        PasapalabraGlitch.volume = 0f;
+        Pasapalabra.volume = 0.3f;
         tiempoIni += Time.deltaTime;
         if (tiempoIni >= tiempoFin)
         {
