@@ -13,6 +13,10 @@ public class TeleController : MonoBehaviour
     public float tiempoFin = 3;
     public bool clickon;
 
+    public AudioSource PasapalabraGlitch;
+    public AudioSource Pasapalabra;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +29,7 @@ public class TeleController : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(clickon);
+        //Debug.Log(clickon);
         if (Input.GetKeyDown(click) && clickon == true) {
 
             contador++;
@@ -35,9 +39,10 @@ public class TeleController : MonoBehaviour
         }
 
         if (contador >= 5) {
-
+            
             anim.SetTrigger("TeleTrigger");
-          
+            
+
             iniciarContador();
         }
 
@@ -50,6 +55,8 @@ public class TeleController : MonoBehaviour
 
     private void iniciarContador()
     {
+        PasapalabraGlitch.volume = 0f;
+        Pasapalabra.volume = 0.3f;
         tiempoIni += Time.deltaTime;
         if (tiempoIni >= tiempoFin)
         {
@@ -58,4 +65,5 @@ public class TeleController : MonoBehaviour
             SceneManager.LoadScene("CasaGerard");
         }
     }
+
 }

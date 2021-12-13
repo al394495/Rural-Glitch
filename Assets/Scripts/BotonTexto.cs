@@ -29,6 +29,9 @@ public class BotonTexto : MonoBehaviour
 
     public int contadorMonedas = 0;
 
+    public AudioSource Movimiento;
+    public AudioSource BotonPulsar;
+
     public void CambiaTexto(string newNumero)
     {
         if (numero.text.Length == 0)
@@ -45,6 +48,11 @@ public class BotonTexto : MonoBehaviour
             numero.text = newNumero;
 
         }
+    }
+
+    public void Sonido()
+    {
+        BotonPulsar.Play();
     }
 
     void Update()
@@ -86,6 +94,7 @@ public class BotonTexto : MonoBehaviour
             if (contador >= 2.4)
             {
                 animacionBarrera4.SetBool("open4", true);
+                Movimiento.Play();
             }
             if (contador >= 3.8)
             {
@@ -142,5 +151,10 @@ public class BotonTexto : MonoBehaviour
             SceneManager.LoadScene("Tienda");
         }
 
+    }
+
+    void PlayMovimiento()
+    {
+        Movimiento.Play();
     }
 }

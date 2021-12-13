@@ -16,6 +16,8 @@ public class robello : MonoBehaviour {
     public Text ContadorRobello;
     public static GameObject robelloPorCoger;
 
+    public AudioSource setaSonido;
+
     public GameObject Menu;
 
     // Use this for initialization
@@ -31,6 +33,7 @@ public class robello : MonoBehaviour {
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
         {
+            setaSonido.Play();
 
             contadorRobellons++;
             

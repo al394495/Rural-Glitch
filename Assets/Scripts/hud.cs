@@ -6,6 +6,7 @@ public class hud : MonoBehaviour
 {
     private float amount = 500.0f;
     public static bool mensaje = false;
+    public AudioSource Vibracion;
 
     // Start is called before the first frame update
     void Start()
@@ -27,14 +28,20 @@ public class hud : MonoBehaviour
         {
             vibrar();
         }
+        else
+        {
+            Vibracion.volume = 0f;
+        }
     }
 
     void vibrar()
     {
+        Vibracion.volume = 0.5f;
         Vector3 newPos = Random.insideUnitSphere * (Time.deltaTime * amount);
         newPos.y = transform.position.y;
         newPos.z = transform.position.z;
         transform.position = newPos;
     }
+
 }
 
