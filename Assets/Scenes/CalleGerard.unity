@@ -2256,7 +2256,7 @@ PrefabInstance:
     - target: {fileID: 6346623999667257849, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: paso
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1593571988}
     - target: {fileID: 6346623999667257854, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: m_Name
       value: Gerard
@@ -2414,11 +2414,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bab8678664634394a8d69b0be5c8be70, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128

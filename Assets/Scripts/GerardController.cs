@@ -7,6 +7,8 @@ public class GerardController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     public Animator animator;
     float horizontal = 0f;
+
+    public AudioSource paso;
     
     // Start is called before the first frame update
     void Start()
@@ -150,6 +152,11 @@ public class GerardController : MonoBehaviour
             transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
 
         }
+    }
+
+    void PlaySound()
+    {
+        paso.Play();
     }
 
 }

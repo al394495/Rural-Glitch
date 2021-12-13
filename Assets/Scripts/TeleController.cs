@@ -40,9 +40,9 @@ public class TeleController : MonoBehaviour
 
         if (contador >= 5) {
             PasapalabraGlitch.Stop();
-            Pasapalabra.Play();
             anim.SetTrigger("TeleTrigger");
-          
+            
+
             iniciarContador();
         }
 
@@ -55,6 +55,7 @@ public class TeleController : MonoBehaviour
 
     private void iniciarContador()
     {
+        Pasapalabra.Play();
         tiempoIni += Time.deltaTime;
         if (tiempoIni >= tiempoFin)
         {
