@@ -7,6 +7,7 @@ public class MenuPausa : MonoBehaviour
 {
     public GameObject Imagen;
     public bool menuabierto = false;
+    public static bool fintutorial = false;
 
     public GameObject botonchat;
     public GameObject botoninternet;
@@ -15,6 +16,7 @@ public class MenuPausa : MonoBehaviour
     public GameObject botonatras;
 
     Animator animator;
+    public Animator abierto;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,27 +64,31 @@ public class MenuPausa : MonoBehaviour
         {
             if (menuabierto == false)
             {
-                Imagen.SetActive(true);
+                /*Imagen.SetActive(true);
                 botonchat.SetActive(true);
                 botoninternet.SetActive(true);
                 botonconfiguracion.SetActive(true);
-                botonsalida.SetActive(true);
+                botonsalida.SetActive(true);*/
+                abierto.SetBool("abierto", true);
                 menuabierto = true;
+                fintutorial = true;
                 hud.mensaje = false;
             }
             else
             {
+                abierto.SetBool("abierto", false);
                 animator.SetBool("Chat", false);
                 animator.SetBool("Internet", false);
                 animator.SetBool("Chat-Marta", false);
                 animator.SetBool("Vacio", false);
-                Imagen.SetActive(false);
+                /*Imagen.SetActive(false);
                 botonchat.SetActive(false);
                 botoninternet.SetActive(false);
                 botonconfiguracion.SetActive(false);
                 botonsalida.SetActive(false);
-                botonatras.SetActive(false);
+                botonatras.SetActive(false);*/
                 menuabierto = false;
+
             }
         }
     }

@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class BotonTexto : MonoBehaviour
 {
     public Text numero;
+    public bool activado = false;
+
     public Animator animacionBarrera0;
     public Animator animacionBarrera1;
     public Animator animacionBarrera2;
@@ -34,20 +36,24 @@ public class BotonTexto : MonoBehaviour
 
     public void CambiaTexto(string newNumero)
     {
-        if (numero.text.Length == 0)
+        if (activado == false)
         {
-            numero.text = newNumero;
-        }
+            if (numero.text.Length == 0)
+            {
+                numero.text = newNumero;
+            }
 
-        else if (numero.text.Length == 1)
-        {
-            numero.text += newNumero;
-        }
-        else
-        {
-            numero.text = newNumero;
+            else if (numero.text.Length == 1)
+            {
+                numero.text += newNumero;
+            }
+            else
+            {
+                numero.text = newNumero;
 
+            }
         }
+        
     }
 
     public void Sonido()
@@ -60,6 +66,7 @@ public class BotonTexto : MonoBehaviour
 
         if (contadorMonedas == 3 && (numero.text == "17" || numero.text == "18"))
         {
+            activado = true;
             Cronometro();            
         }
         Debug.Log(contadorMonedas);
