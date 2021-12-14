@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74594560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2235904, y: -0.79996634, z: -10}
+  m_LocalPosition: {x: -2.2247372, y: -0.7999673, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -820,7 +820,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5993788, y: 1}
+    m_SensorSize: {x: 1.599099, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 1792164027}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 2056611362}
 --- !u!1 &1021109113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texto: {fileID: 814745239}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 2056611362}
 --- !u!1001 &1357843401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2553,7 +2553,7 @@ MonoBehaviour:
   Texto: {fileID: 1021109113}
   Barrera: {fileID: 1407450327}
   cerca: 0
-  Menu: {fileID: 0}
+  Menu: {fileID: 2056611362}
 --- !u!1001 &1892969623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2757,7 +2757,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4405915455957780497, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
   m_PrefabInstance: {fileID: 2056611359}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2056611362}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcd6618d1547919468a9c5bff9d2ce0f, type: 3}
@@ -2766,6 +2766,11 @@ MonoBehaviour:
 --- !u!224 &2056611361 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4405915455957780526, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
+  m_PrefabInstance: {fileID: 2056611359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2056611362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4405915455957780527, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
   m_PrefabInstance: {fileID: 2056611359}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2076912175
