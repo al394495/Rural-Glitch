@@ -7,6 +7,7 @@ public class MenuPausa : MonoBehaviour
 {
     public GameObject Imagen;
     public bool menuabierto = false;
+    public static bool fintutorial = false;
 
     public GameObject botonchat;
     public GameObject botoninternet;
@@ -70,6 +71,7 @@ public class MenuPausa : MonoBehaviour
                 botonsalida.SetActive(true);*/
                 abierto.SetBool("abierto", true);
                 menuabierto = true;
+                fintutorial = true;
                 hud.mensaje = false;
             }
             else

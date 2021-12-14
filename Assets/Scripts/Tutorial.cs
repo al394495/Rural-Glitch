@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] popUps;
+    private int popupIndex;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < popUps.Length; i++)
+        {
+            if (i == popupIndex)
+            {
+                popUps[i].SetActive(true);
+            }
+            else
+            {
+                popUps[i].SetActive(false);
+            }
+        }
+        if(popupIndex == 0)
+        {
+            if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                popupIndex++;
+            }
+        }
+        else if (popupIndex == 1)
+        {
+            if (MenuPausa.fintutorial == true)
+            {
+                popupIndex++;
+            }
+        }
+        else if(popupIndex == 2)
+        {
+            popUps[popupIndex].SetActive(true);
+        }
     }
 }
