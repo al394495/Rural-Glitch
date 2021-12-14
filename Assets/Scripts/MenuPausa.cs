@@ -20,7 +20,6 @@ public class MenuPausa : MonoBehaviour
     void Start()
     {
         animator = Imagen.GetComponent<Animator>();
-        abierto.SetBool("abierto", false);
     }
 
     // Update is called once per frame
