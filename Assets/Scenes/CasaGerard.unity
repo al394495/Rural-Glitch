@@ -1373,8 +1373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bocadillo: {fileID: 333538926}
-  tiempoIni: 0
-  tiempoFin: 2
 --- !u!4 &824416132
 Transform:
   m_ObjectHideFlags: 0
