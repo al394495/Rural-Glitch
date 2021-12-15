@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MaquinaExpendedora.unity
     guid: 8ebd7453934deb34d94af1ec03033c9c
+  - enabled: 1
+    path: Assets/Scenes/Central.unity
+    guid: f2045b2980443ce499907bd1610a2b89
+  - enabled: 1
+    path: Assets/Scenes/Boton.unity
+    guid: c542c356f4eac91448431adcedcf50af
   m_configObjects: {}

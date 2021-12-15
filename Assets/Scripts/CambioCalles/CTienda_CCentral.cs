@@ -20,8 +20,7 @@ public class CTienda_CCentral : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
                 {
                     MainMenuScript.cambio = "calleTienda-central";
-                    //SceneManager.LoadScene("Central");
-                    Debug.Log("Entra central");
+                    SceneManager.LoadScene("Central");
                 }
             }
         }
@@ -29,7 +28,7 @@ public class CTienda_CCentral : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {       
-        if (VariablesGlobales.dia == 3)
+        if ((VariablesGlobales.dia == 3) && (other.gameObject.name == "Gerard"))
         {
             Texto.SetActive(true);
             cerca = true;
