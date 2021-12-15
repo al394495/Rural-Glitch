@@ -1613,6 +1613,8 @@ GameObject:
   - component: {fileID: 1505992914}
   - component: {fileID: 1505992917}
   - component: {fileID: 1505992918}
+  - component: {fileID: 1505992921}
+  - component: {fileID: 1505992920}
   - component: {fileID: 1505992919}
   m_Layer: 0
   m_Name: Main Camera
@@ -1768,6 +1770,38 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1505992920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505992913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2934da097fd9a6145996eef13a190a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPos: {fileID: 1838764481}
+  spawnee: {fileID: 1465728042335436003, guid: 7c0302f38a8698b49a28b46640de37df, type: 3}
+  timer: 0
+  rand: 0
+--- !u!114 &1505992921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505992913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef6edb7251d4624bb4e5df083354d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPos: {fileID: 1838764481}
+  spawnee: {fileID: 4260453885633303994, guid: 0c68708a4371f504bb6403cbe9cb6c6f, type: 3}
+  timer: 0
+  rand: 0
 --- !u!1001 &1818035541
 PrefabInstance:
   m_ObjectHideFlags: 0
