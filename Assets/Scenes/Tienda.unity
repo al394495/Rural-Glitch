@@ -616,14 +616,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 51758419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bef6fcacfc872248a6b9ee5f5a709bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 2843a4291d6e84e42b9c8158b049ff87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
+  dialogoPrimero:
     name: Vendedor
     sentences:
-    - Hola q tal
-    - gracias por su compra
+    - Hola Gerard, pasa y compra lo que quieras.
+  dialogoMaquina:
+    name: Vendedor
+    sentences:
+    - "\xA1\xBFSe ha roto la m\xE1quina?!"
+    - "Que raro si vino el t\xE9cnico el otro d\xEDa a revisarla."
+    - "Bueno no te preocupes Gerard ya llamare al t\xE9cnico otro d\xEDa."
 --- !u!1 &75810188
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bocadillo: {fileID: 2111217796}
-  tiempoIni: 0
-  tiempoFin: 3
 --- !u!4 &342596830
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,7 +1087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563058085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.578449, y: -2.1572757, z: -10}
+  m_LocalPosition: {x: -4.576797, y: -2.1572757, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1274,7 +1277,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5991693, y: 1}
+    m_SensorSize: {x: 1.5997922, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

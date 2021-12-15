@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class InteracciónHabitación : MonoBehaviour
 {
@@ -8,8 +9,13 @@ public class InteracciónHabitación : MonoBehaviour
     public bool cerca = false;
     public GameObject Menu;
 
+    public GameObject Cinematica2;
+    public VideoPlayer video2;
 
-
+    void Start()
+    {
+        Cinematica2.SetActive(false);
+    }
     void Update()
     {
         if (cerca)
@@ -18,8 +24,10 @@ public class InteracciónHabitación : MonoBehaviour
             {
                 if (VariablesGlobales.minijuegoRealizado1 == true && VariablesGlobales.minijuegoRealizado2 == true)
                 {
-                    VariablesGlobales.dia = 2;
-                    Debug.Log(VariablesGlobales.dia);
+                    Cinematica2.SetActive(true);
+                    video2 = Cinematica2.GetComponent<VideoPlayer>();
+                    video2.Play();
+                    video2.loopPointReached += CheckOver;
                 }
             }
         }
@@ -36,5 +44,12 @@ public class InteracciónHabitación : MonoBehaviour
     {
         Texto.SetActive(false);
         cerca = false;
+    }
+
+    void CheckOver(VideoPlayer vp)
+    {
+        VariablesGlobales.dia = 2;
+        Debug.Log(VariablesGlobales.dia);
+        Cinematica2.SetActive(false);
     }
 }

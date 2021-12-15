@@ -941,7 +941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563058085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.2563133, y: -1.7954192, z: -10}
+  m_LocalPosition: {x: -4.2545385, y: -1.7954192, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1227,21 +1227,25 @@ MonoBehaviour:
   dialogoInicial:
     name: Yaya
     sentences:
-    - Hola nieto
-    - Coge robellones
+    - "\xA1Buenos dias Gerard!"
+    - Espero que hayas descansado bien.
+    - Quiero hacer un estofado con robellones pero no tengo, ves al bosque y recoge
+      unos cuantos porfavor.
   dialogoNoRebollons:
     name: Yaya
     sentences:
-    - Necesito mas robellones
+    - Necesito mas robellones para el estofado.
   dialogoRebollons:
     name: Yaya
     sentences:
-    - Gracias nietecito
-    - Ahora necesito que vayas a la tienda del pueblo a por unos refrescos.
+    - "Muchas gracias cari\xF1et."
+    - Ahora necesito que vayas a la tienda del pueblo a por unos refrescos, compralos
+      de la maquina que estan mas fresquitos.
   dialogoBebidas:
-    name: 
+    name: Yaya
     sentences:
-    - Gracias por los refrescos nietecillo.
+    - "Gracias por los refrescos, ya te puedes ir a casa tranquilo.\nToma diez eurillos
+      por ayudarme cari\xF1o."
 --- !u!61 &790889800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1457,7 +1461,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5991693, y: 1}
+    m_SensorSize: {x: 1.5997922, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
