@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class VariablesGlobales : MonoBehaviour
 {
-    public static int dia = 1;
+    public static int dia;
 
-    public static bool minijuego1 = false;
+    public static bool minijuego1;
 
-    public static bool minijuegoRealizado1 = false;
-    public static bool minijuegoRealizado2 = false;
-    public static bool minijuegoRealizado3 = false;
+    public static bool minijuegoRealizado1;
+    public static bool minijuegoRealizado2;
+    public static bool minijuegoRealizado3;
 
-    public static int dialogoYaya = 0;
-    public static int amigos = 0;
+    public static int dialogoYaya;
+    public static int amigos;
 
-    public static bool bebidasRecogidas = false;
+    public static bool bebidasRecogidas;
 }
