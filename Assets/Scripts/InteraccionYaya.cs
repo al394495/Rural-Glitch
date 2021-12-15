@@ -8,6 +8,7 @@ public class InteraccionYaya : MonoBehaviour
     public bool cerca = false;
     public GameObject puerta;
     public GameObject Menu;
+    public GameObject bocadillo;
 
 
 
@@ -47,6 +48,7 @@ public class InteraccionYaya : MonoBehaviour
     {
         Texto.SetActive(false);
         cerca = false;
+        bocadillo.SetActive(false);
     }
 
 }
