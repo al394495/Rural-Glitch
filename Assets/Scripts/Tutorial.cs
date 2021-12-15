@@ -5,10 +5,13 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
     public GameObject[] popUps;
-    private int popupIndex;
+    public static int popupIndex;
+    public GameObject tutorial;
 
+    public static bool fin = false;
     void Update()
     {
+
         for (int i = 0; i < popUps.Length; i++)
         {
             if (i == popupIndex)
@@ -32,11 +35,14 @@ public class Tutorial : MonoBehaviour
             if (MenuPausa.fintutorial == true)
             {
                 popupIndex++;
+                fin = true;
             }
         }
         else if(popupIndex == 2)
         {
             popUps[popupIndex].SetActive(true);
         }
+
+        
     }
 }
