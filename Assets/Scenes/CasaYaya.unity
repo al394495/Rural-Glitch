@@ -1046,6 +1046,7 @@ MonoBehaviour:
   - {fileID: 1481561287}
   - {fileID: 903699195}
   - {fileID: 1885687385}
+  tutorial: {fileID: 602877464}
 --- !u!4 &602877466
 Transform:
   m_ObjectHideFlags: 0
@@ -1351,7 +1352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903699196
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1939,7 +1940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1481561288
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2030,8 +2031,6 @@ MonoBehaviour:
   dialogueText: {fileID: 1840948401}
   animator: {fileID: 1707898034}
   sonidoTexto: {fileID: 0}
-  tiempoIni: 0
-  tiempoFin: 3
   bocadillo: {fileID: 1056655262}
 --- !u!4 &1523217202
 Transform:
@@ -2299,6 +2298,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 133.8
       objectReference: {fileID: 0}
+    - target: {fileID: 4405915455957780497, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 602877464}
     - target: {fileID: 4405915455957780526, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2426,7 +2429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1885687386
 RectTransform:
   m_ObjectHideFlags: 0

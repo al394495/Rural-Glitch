@@ -17,6 +17,8 @@ public class MenuPausa : MonoBehaviour
 
     Animator animator;
     public Animator abierto;
+
+    //public GameObject tutorial;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,10 @@ public class MenuPausa : MonoBehaviour
                     menuabierto = false;
                 }
             }
+        }*/
+        /*if (fintutorial)
+        {
+            tutorial.SetActive(false);
         }*/
     }
 

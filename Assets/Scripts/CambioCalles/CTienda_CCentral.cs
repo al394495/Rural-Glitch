@@ -37,7 +37,10 @@ public class CTienda_CCentral : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Texto.SetActive(false);
-        cerca = false;
+        if (other.gameObject.name == "Gerard")
+        {
+            Texto.SetActive(false);
+            cerca = false;
+        }
     }
 }

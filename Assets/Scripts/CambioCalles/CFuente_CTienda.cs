@@ -25,14 +25,20 @@ public class CFuente_CTienda : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
+        if (other.gameObject.name == "Gerard")
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
 
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Texto.SetActive(false);
-        cerca = false;
+        if (other.gameObject.name == "Gerard")
+        {
+            Texto.SetActive(false);
+            cerca = false;
+        }
     }
 }
