@@ -820,7 +820,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4405915455957780497, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
   m_PrefabInstance: {fileID: 1320466927}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1320466928}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcd6618d1547919468a9c5bff9d2ce0f, type: 3}
@@ -1885,7 +1885,7 @@ PrefabInstance:
     - target: {fileID: 649499914, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Menu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1320466928}
     - target: {fileID: 649499914, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: pickUpText
       value: 
@@ -1901,7 +1901,7 @@ PrefabInstance:
     - target: {fileID: 649499915, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Menu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1320466928}
     - target: {fileID: 649499915, guid: e07413d703c674f4fb56068d526dc856, type: 3}
       propertyPath: Bocadillo
       value: 
@@ -3270,6 +3270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
+--- !u!1 &1320466928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4405915455957780527, guid: e137b84eb0951534bb3c9e6e6f5c32d8, type: 3}
+  m_PrefabInstance: {fileID: 1320466927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1323022400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5183453552790178320, guid: 79fa2d24bfc6bcd4f8b43b03c70b4e36, type: 3}
