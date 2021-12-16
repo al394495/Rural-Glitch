@@ -15,6 +15,7 @@ public class VariablesGlobales : MonoBehaviour
     public static int dialogoYaya;
     public static int dialogoVendedor;
     public static int amigos;
+    public static int dialogoMarta;
 
     public static bool bebidasRecogidas;
 }

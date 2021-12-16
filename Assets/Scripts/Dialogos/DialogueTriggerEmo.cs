@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DialogueTriggerEmo : MonoBehaviour
 {
-    public Dialogue dialogue;
-
+    public Dialogue dialogoPrimero;
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogoPrimero);
     }
 }
+

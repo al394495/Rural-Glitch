@@ -16,6 +16,7 @@ public class InicializarVariablesGlobales : MonoBehaviour
 
         VariablesGlobales.dialogoYaya = 0;
         VariablesGlobales.dialogoVendedor = 0;
+        VariablesGlobales.dialogoMarta = 0;
         VariablesGlobales.amigos = 0;
 
         VariablesGlobales.bebidasRecogidas = false;
