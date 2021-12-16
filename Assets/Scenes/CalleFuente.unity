@@ -913,7 +913,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8055673, y: 0.24450874}
+  m_Offset: {x: 1.8055673, y: 4.8582335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -924,7 +924,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.029313, y: 29.510984}
+  m_Size: {x: 10.029313, y: 20.283533}
   m_EdgeRadius: 0
 --- !u!114 &327262958
 MonoBehaviour:
@@ -1701,7 +1701,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: 0}
+  m_Offset: {x: 0, y: 1.2276243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1712,7 +1712,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.8637943, y: 10}
+  m_Size: {x: 4.8637943, y: 7.544751}
   m_EdgeRadius: 0
 --- !u!212 &977714639
 SpriteRenderer:
@@ -3249,7 +3249,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.067341805, y: -0.47137856}
+  m_Offset: {x: 0.067341805, y: 1.9118607}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3260,7 +3260,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.493513, y: 16.415405}
+  m_Size: {x: 8.493513, y: 11.648928}
   m_EdgeRadius: 0
 --- !u!212 &2071342305
 SpriteRenderer:
@@ -3396,3 +3396,4 @@ MonoBehaviour:
     - "\xA1\xBFTios que le pasa a la ardilla esa?!"
     - "Esto es mu raro, no s\xE9 vosotros pero lo mejor va a ser que volvamos a casa
       a descansar."
+  dialoguillo: 0

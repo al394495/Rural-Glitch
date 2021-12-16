@@ -24,7 +24,7 @@ public class InteracciónTV : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (VariablesGlobales.amigos == 3 && VariablesGlobales.dia == 2)
+        if ((VariablesGlobales.amigos == 3 && VariablesGlobales.dia == 2) && !VariablesGlobales.minijuegoRealizado3)
         {
             Texto.SetActive(true);
             cerca = true;
