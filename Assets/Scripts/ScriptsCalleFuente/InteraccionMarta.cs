@@ -9,6 +9,7 @@ public class InteraccionMarta : MonoBehaviour
     public bool dialogo = false;
     public bool interaccion = false;
     public GameObject Menu;
+    public GameObject bocadillo2;
 
     void Update()
     {
@@ -54,5 +55,6 @@ public class InteraccionMarta : MonoBehaviour
     {
         Texto.SetActive(false);
         cerca = false;
+        bocadillo2.SetActive(false);
     }
 }

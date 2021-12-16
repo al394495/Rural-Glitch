@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public static bool DialogoActivo = false;
 
     public GameObject bocadillo;
+    public GameObject bocadillo2;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +76,10 @@ public class DialogueManager : MonoBehaviour
         {
             bocadillo.SetActive(true);
 
+        }
+        if (VariablesGlobales.dialogoMarta == 1)
+        {
+            bocadillo2.SetActive(true);
         }
 
     }
