@@ -14,6 +14,7 @@ public class InteracciónHabitación : MonoBehaviour
     public VideoPlayer video2;
     public VideoPlayer video3;
 
+
     void Start()
     {
         Cinematica2.SetActive(false);
@@ -67,11 +68,15 @@ public class InteracciónHabitación : MonoBehaviour
         if(VariablesGlobales.dia == 1)
         {
             VariablesGlobales.dia = 2;
+            cerca = false;
+            Texto.SetActive(false);
             Cinematica2.SetActive(false);
         }
         else if (VariablesGlobales.dia == 2)
         {
             VariablesGlobales.dia = 3;
+            cerca = false;
+            Texto.SetActive(false);
             Cinematica3.SetActive(false);
         }
     }
