@@ -10,11 +10,14 @@ public class InteracciónHabitación : MonoBehaviour
     public GameObject Menu;
 
     public GameObject Cinematica2;
+    public GameObject Cinematica3;
     public VideoPlayer video2;
+    public VideoPlayer video3;
 
     void Start()
     {
         Cinematica2.SetActive(false);
+        Cinematica3.SetActive(false);
     }
     void Update()
     {
@@ -24,10 +27,20 @@ public class InteracciónHabitación : MonoBehaviour
             {
                 if (VariablesGlobales.minijuegoRealizado1 == true && VariablesGlobales.minijuegoRealizado2 == true)
                 {
-                    Cinematica2.SetActive(true);
-                    video2 = Cinematica2.GetComponent<VideoPlayer>();
-                    video2.Play();
-                    video2.loopPointReached += CheckOver;
+                    if (VariablesGlobales.dia == 1)
+                    {
+                        Cinematica2.SetActive(true);
+                        video2 = Cinematica2.GetComponent<VideoPlayer>();
+                        video2.Play();
+                        video2.loopPointReached += CheckOver;
+                    }
+                    else if (VariablesGlobales.dia == 2)
+                    {
+                        Cinematica3.SetActive(true);
+                        video3 = Cinematica3.GetComponent<VideoPlayer>();
+                        video3.Play();
+                        video3.loopPointReached += CheckOver;
+                    }
                 }
             }
         }
@@ -35,9 +48,11 @@ public class InteracciónHabitación : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
-
+        if ((VariablesGlobales.dia == 1 && VariablesGlobales.minijuegoRealizado2) || (VariablesGlobales.dia == 2 && VariablesGlobales.dialogoMarta == 1))
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -48,8 +63,15 @@ public class InteracciónHabitación : MonoBehaviour
 
     void CheckOver(VideoPlayer vp)
     {
-        VariablesGlobales.dia = 2;
-        Debug.Log(VariablesGlobales.dia);
-        Cinematica2.SetActive(false);
+        if(VariablesGlobales.dia == 1)
+        {
+            VariablesGlobales.dia = 2;
+            Cinematica2.SetActive(false);
+        }
+        else if (VariablesGlobales.dia == 2)
+        {
+            VariablesGlobales.dia = 3;
+            Cinematica3.SetActive(false);
+        }
     }
 }
