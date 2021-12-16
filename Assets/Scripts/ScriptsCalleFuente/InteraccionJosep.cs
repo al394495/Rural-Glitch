@@ -16,8 +16,16 @@ public class InteraccionJosep : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
-                FindObjectOfType<DialogueTriggerJosep>().TriggerDialogue();
-                dialogo = true;
+                if (!VariablesGlobales.minijuegoRealizado3)
+                {
+                    FindObjectOfType<DialogueTriggerJosep>().TriggerDialogue();
+                    dialogo = true;
+                }
+                else
+                {
+                    FindObjectOfType<DialogueTriggerAmigos>().TriggerDialogue();
+                    dialogo = true;
+                }
                 if (!interaccion)
                 {
                     VariablesGlobales.amigos++;
@@ -34,9 +42,12 @@ public class InteraccionJosep : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
-
+        if (VariablesGlobales.dialogoMarta != 1)
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
+        else cerca = false;
     }
 
     void OnTriggerExit2D(Collider2D other)

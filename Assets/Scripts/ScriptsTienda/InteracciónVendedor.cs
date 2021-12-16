@@ -17,9 +17,8 @@ public class InteracciónVendedor : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
             {
-                FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+                FindObjectOfType<DialogueTriggerVendedor>().TriggerDialogueVendedor();
                 dialogo = true;
-                //puerta.GetComponent<PolygonCollider2D>().isTrigger = true;
             }
         }
 
@@ -31,9 +30,12 @@ public class InteracciónVendedor : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
-
+        if (VariablesGlobales.dialogoVendedor == 0)
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
+        else cerca = false;
     }
 
     void OnTriggerExit2D(Collider2D other)

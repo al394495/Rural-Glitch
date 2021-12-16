@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MainMenuScript : MonoBehaviour
 {
     public static string cambio;
 
+    public GameObject cinematicaInicial;
+    public VideoPlayer videoInicial;
     public AudioSource click;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cinematicaInicial.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,8 +26,10 @@ public class MainMenuScript : MonoBehaviour
     public void EscenaJuego()
 
     {
-        cambio = "inicio-casaYaya";
-        SceneManager.LoadScene("CasaYaya");
+        cinematicaInicial.SetActive(true);
+        videoInicial = cinematicaInicial.GetComponent<VideoPlayer>();
+        videoInicial.Play();
+        videoInicial.loopPointReached += CheckOver;
     }
 
 
@@ -43,5 +48,11 @@ public class MainMenuScript : MonoBehaviour
     public void Sonido()
     {
         click.Play();
+    }
+
+    void CheckOver (VideoPlayer vp)
+    {
+        cambio = "inicio-casaYaya";
+        SceneManager.LoadScene("CasaYaya");
     }
 }

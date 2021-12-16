@@ -913,7 +913,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8055673, y: 0.24450874}
+  m_Offset: {x: 1.8055673, y: 4.8582335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -924,7 +924,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.029313, y: 29.510984}
+  m_Size: {x: 10.029313, y: 20.283533}
   m_EdgeRadius: 0
 --- !u!114 &327262958
 MonoBehaviour:
@@ -955,10 +955,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61766e1ad2bce49458e83d6a4909a5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
+  dialogoPrimero:
     name: Guillem
     sentences:
-    - A mi me da igual quien gane hoy en el programa.
+    - A mi de igual quien gane el programa.
 --- !u!1 &362298986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4140736069536721184, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
@@ -1701,7 +1701,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: 0}
+  m_Offset: {x: 0, y: 1.2276243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1712,7 +1712,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.8637943, y: 10}
+  m_Size: {x: 4.8637943, y: 7.544751}
   m_EdgeRadius: 0
 --- !u!212 &977714639
 SpriteRenderer:
@@ -1809,10 +1809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96c8a9213619d24dab24a22c6459e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
+  dialogoPrimero:
     name: Josep
     sentences:
-    - Si gana Ramon en este programa me debes 5 euros Marta.
+    - Si gana Ramon me debes cinco euros Marta.
 --- !u!1001 &1009072106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2312,7 +2312,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5991693, y: 1}
+    m_SensorSize: {x: 1.5997922, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2429,6 +2429,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55074baeebd32774fbe258ae6ab49a93, type: 3}
+--- !u!1001 &1530315996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6412373918821141477, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_Name
+      value: Ardilla-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141478, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141479, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141480, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412373918821141481, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f92b3982982ae7b4e8a558744c7892d7, type: 3}
 --- !u!1001 &1619862201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3026,7 +3095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063261826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0242937, y: -0.06465888, z: -10}
+  m_LocalPosition: {x: -1.021178, y: -0.06465888, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3159,6 +3228,7 @@ GameObject:
   - component: {fileID: 2071342304}
   - component: {fileID: 2071342307}
   - component: {fileID: 2071342308}
+  - component: {fileID: 2071342309}
   m_Layer: 0
   m_Name: laMarta
   m_TagString: Untagged
@@ -3179,7 +3249,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.067341805, y: -0.47137856}
+  m_Offset: {x: 0.067341805, y: 1.9118607}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3190,7 +3260,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.493513, y: 16.415405}
+  m_Size: {x: 8.493513, y: 11.648928}
   m_EdgeRadius: 0
 --- !u!212 &2071342305
 SpriteRenderer:
@@ -3287,7 +3357,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cb7b802a5fcb947b281b04709bcc1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
+  dialogoPrimero:
     name: Marta
     sentences:
-    - Buah pues si gana el Juanjo me das tu a mi 10 euros.
+    - Buah pues si gana el Juanjo me debes tu a mi diez euros.
+--- !u!114 &2071342309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071342303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147efd4354ddd0642a758dee0a8178a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primerDialogo:
+    name: Josep
+    sentences:
+    - "Chicos no se que esta pasando pero mi televisi\xF3n ha dejado de funcionar
+      y ahora mi movil tampoco tiene cobertura."
+  segundoDialogo:
+    name: Guillem
+    sentences:
+    - "Tios pues yo he escuchado una explosi\xF3n en la central que est\xE1 al lao
+      de mi casa y de repente la tele del sal\xF3n ha empezado a hacer cosas raras."
+  tercerDialogo:
+    name: Josep
+    sentences:
+    - Pues espero que no haya pasado nada grabe porque la central lleva sin pesonal
+      desde hace mucho ya que nadie quiere mudarse a un pueblo tan lejano para trabajar.
+  ultimoDialogo:
+    name: Marta
+    sentences:
+    - "No s\xE9 pero mi tele tambien ha empezado a..."
+    - "\xA1AHHHHHH!"
+    - "\xA1\xBFTios que le pasa a la ardilla esa?!"
+    - "Esto es mu raro, no s\xE9 vosotros pero lo mejor va a ser que volvamos a casa
+      a descansar."
+  dialoguillo: 0

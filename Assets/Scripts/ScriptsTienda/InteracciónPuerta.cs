@@ -25,8 +25,11 @@ public class InteracciónPuerta : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
+        if (VariablesGlobales.dialogoVendedor == 1)
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
 
     }
 

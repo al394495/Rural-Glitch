@@ -39,8 +39,12 @@ public class InteraccionYaya : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Texto.SetActive(true);
-        cerca = true;
+        if(VariablesGlobales.dia == 1 && VariablesGlobales.minijuegoRealizado2 != true)
+        {
+            Texto.SetActive(true);
+            cerca = true;
+        }
+        else cerca = false;
 
     }
 

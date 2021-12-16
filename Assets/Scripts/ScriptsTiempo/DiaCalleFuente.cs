@@ -10,7 +10,7 @@ public class DiaCalleFuente : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (VariablesGlobales.dia != 2)
+        if (VariablesGlobales.dia != 2 || VariablesGlobales.dialogoMarta == 1)
         {
             Marta.SetActive(false);
             Josep.SetActive(false);
