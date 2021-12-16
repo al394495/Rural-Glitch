@@ -1059,7 +1059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665501795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4293413, y: 2.7504106, z: -10}
+  m_LocalPosition: {x: -5.4280996, y: 2.7504132, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6010101, y: 1}
+    m_SensorSize: {x: 1.6015625, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1781,6 +1781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548561228}
   - component: {fileID: 1548561227}
+  - component: {fileID: 1548561229}
   m_Layer: 0
   m_Name: "CentralEl\xE9ctrica 1"
   m_TagString: Untagged
@@ -1854,6 +1855,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548561229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548561226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9682acff52c25594887fa5eb70b51fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iluminacionGlitch: {fileID: 1714406382}
 --- !u!1001 &1699208329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,6 +1982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07a7479c31d5ece44accffb758a6b302, type: 3}
+--- !u!1 &1714406382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1389662711933934792, guid: 07a7479c31d5ece44accffb758a6b302, type: 3}
+  m_PrefabInstance: {fileID: 1714406381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821577040
 GameObject:
   m_ObjectHideFlags: 0

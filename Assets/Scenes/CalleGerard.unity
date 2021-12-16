@@ -288,7 +288,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6010101, y: 1}
+    m_SensorSize: {x: 1.6015625, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -569,6 +569,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07a7479c31d5ece44accffb758a6b302, type: 3}
+--- !u!1 &280189288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1389662711933934792, guid: 07a7479c31d5ece44accffb758a6b302, type: 3}
+  m_PrefabInstance: {fileID: 280189287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &286496564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2093,7 +2098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505992913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.551028, y: -1.5493083, z: -10}
+  m_LocalPosition: {x: 14.551028, y: -1.5493064, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2858,6 +2863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070293973}
   - component: {fileID: 2070293972}
+  - component: {fileID: 2070293974}
   m_Layer: 0
   m_Name: Calle_Gerard
   m_TagString: Untagged
@@ -2931,6 +2937,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070293974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070293971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9682acff52c25594887fa5eb70b51fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iluminacionGlitch: {fileID: 280189288}
 --- !u!1001 &2076051981
 PrefabInstance:
   m_ObjectHideFlags: 0
