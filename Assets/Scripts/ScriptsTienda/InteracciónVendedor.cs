@@ -35,6 +35,7 @@ public class InteracciónVendedor : MonoBehaviour
             Texto.SetActive(true);
             cerca = true;
         }
+        else cerca = false;
     }
 
     void OnTriggerExit2D(Collider2D other)

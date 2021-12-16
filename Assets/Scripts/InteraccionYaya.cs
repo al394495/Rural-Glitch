@@ -44,6 +44,7 @@ public class InteraccionYaya : MonoBehaviour
             Texto.SetActive(true);
             cerca = true;
         }
+        else cerca = false;
 
     }
 
