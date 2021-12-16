@@ -801,11 +801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3311602270807848160, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.18
+      value: 22.12
       objectReference: {fileID: 0}
     - target: {fileID: 3311602270807848160, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.74
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 3311602270807848160, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -842,6 +842,10 @@ PrefabInstance:
     - target: {fileID: 3311602270807848162, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
       propertyPath: m_Name
       value: Light 2D puerta
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311602270807848163, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 2.99
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8644983e13f1fac4293fe2a0d82fad27, type: 3}
