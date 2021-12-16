@@ -3571,11 +3571,12 @@ MonoBehaviour:
     name: Guillem
     sentences:
     - "Tios pues yo he escuchado una explosi\xF3n en la central que est\xE1 al lao
-      de mi casa y de repente la tele del sal\xF3n ha empezado a hacer cosas raras."
+      de mi casa y de repente la tele del sal\xF3n ha empezado a hacer cosas raras. "
+    - "Alomejor deber\xEDamos ir a la central ma\xF1ana."
   tercerDialogo:
     name: Josep
     sentences:
-    - Pues espero que no haya pasado nada grabe porque la central lleva sin pesonal
+    - Pues espero que no haya pasado nada grave porque la central lleva sin pesonal
       desde hace mucho ya que nadie quiere mudarse a un pueblo tan lejano para trabajar.
   ultimoDialogo:
     name: Marta
