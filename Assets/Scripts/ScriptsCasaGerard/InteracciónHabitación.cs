@@ -70,6 +70,7 @@ public class InteracciónHabitación : MonoBehaviour
             VariablesGlobales.dia = 2;
             cerca = false;
             Texto.SetActive(false);
+            hud.mensaje = true;
             Cinematica2.SetActive(false);
         }
         else if (VariablesGlobales.dia == 2)

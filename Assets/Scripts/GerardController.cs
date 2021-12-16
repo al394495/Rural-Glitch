@@ -57,6 +57,7 @@ public class GerardController : MonoBehaviour
         {
             positionIni.x = 3.8f;
             positionIni.y = -3.49f;
+            hud.mensaje = true;
         }
 
         else if (MainMenuScript.cambio == "glitches-casaGerard")
