@@ -128,7 +128,7 @@ public class GerardController : MonoBehaviour
     void Update()
     {
 
-        if (DialogueManager.DialogoActivo == false)
+        if (DialogueManager.DialogoActivo == false && VariablesGlobales.cinematica == false)
         {
             horizontal = Input.GetAxisRaw("Horizontal");
             Vector2 position = rigidbody2d.position;

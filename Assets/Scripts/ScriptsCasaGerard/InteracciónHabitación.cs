@@ -30,6 +30,7 @@ public class InteracciónHabitación : MonoBehaviour
                 {
                     if (VariablesGlobales.dia == 1)
                     {
+                        VariablesGlobales.cinematica = true;
                         Cinematica2.SetActive(true);
                         video2 = Cinematica2.GetComponent<VideoPlayer>();
                         video2.Play();
@@ -37,6 +38,7 @@ public class InteracciónHabitación : MonoBehaviour
                     }
                     else if (VariablesGlobales.dia == 2)
                     {
+                        VariablesGlobales.cinematica = true;
                         Cinematica3.SetActive(true);
                         video3 = Cinematica3.GetComponent<VideoPlayer>();
                         video3.Play();
@@ -72,6 +74,7 @@ public class InteracciónHabitación : MonoBehaviour
             Texto.SetActive(false);
             hud.mensaje = true;
             Cinematica2.SetActive(false);
+            VariablesGlobales.cinematica = false;
         }
         else if (VariablesGlobales.dia == 2)
         {
@@ -79,6 +82,7 @@ public class InteracciónHabitación : MonoBehaviour
             cerca = false;
             Texto.SetActive(false);
             Cinematica3.SetActive(false);
+            VariablesGlobales.cinematica = false;
         }
     }
 }
