@@ -15,7 +15,7 @@ public class InteraccionMarta : MonoBehaviour
     {
         if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false)
+            if (Input.GetKeyDown(KeyCode.Space) && Menu.GetComponent<MenuPausa>().menuabierto == false && DialogueManager.DialogoActivo == false)
             {
                 if (!VariablesGlobales.minijuegoRealizado3)
                 {

@@ -63,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return StartCoroutine(WaitFor.Frames(5));
+            yield return StartCoroutine(WaitFor.Frames(1));
         }
     }
 

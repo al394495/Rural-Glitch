@@ -9,6 +9,8 @@ public class InicializarVariablesGlobales : MonoBehaviour
     {
         VariablesGlobales.dia = 1;
 
+        VariablesGlobales.cinematica = false;
+
         VariablesGlobales.minijuego1 = false;
         VariablesGlobales.minijuegoRealizado1 = false;
         VariablesGlobales.minijuegoRealizado2 = false;
