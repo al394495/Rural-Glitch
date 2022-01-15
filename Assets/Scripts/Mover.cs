@@ -39,8 +39,11 @@ public class Mover : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        coin.Play();
-        Destroy(this.gameObject);
-        BotonTexto.contadorMonedas++;
+        if (other.name == "TragaMonedas"){
+            coin.Play();
+            Destroy(this.gameObject);
+            BotonTexto.contadorMonedas++;
+        }
+        
     }
 }
