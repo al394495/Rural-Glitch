@@ -127,6 +127,10 @@ public class GerardController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (VariablesGlobales.dia == 3)
+        {
+            animator.SetBool("Glitched", true);
+        }
 
         if (DialogueManager.DialogoActivo == false && VariablesGlobales.cinematica == false)
         {
@@ -137,10 +141,12 @@ public class GerardController : MonoBehaviour
             //transform.position = position;
 
             rigidbody2d.MovePosition(position);
+
         }
         else
         {
             animator.SetFloat("Speed", Mathf.Abs(0f));
+            animator.SetBool("Glitched", false);
         }
 
 
