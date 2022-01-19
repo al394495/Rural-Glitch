@@ -137,7 +137,7 @@ public class GerardController : MonoBehaviour
             horizontal = Input.GetAxisRaw("Horizontal");
             Vector2 position = rigidbody2d.position;
             animator.SetFloat("Speed", Mathf.Abs(horizontal));
-            position.x = position.x + 3.0f * horizontal * Time.fixedDeltaTime;
+            position.x = position.x + 6.0f * horizontal * Time.fixedDeltaTime;
             //transform.position = position;
 
             rigidbody2d.MovePosition(position);
