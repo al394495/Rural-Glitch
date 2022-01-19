@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: gerardidle
+  m_Name: gerardidleglitch
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e3bfb27e0b95b634abb5b329ec4327e8, type: 3}
+      value: {fileID: 21300000, guid: 14703358806c0e145bed1676ee9d1f55, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 5a344171d8aca3d42b09885c900cfd08, type: 3}
+      value: {fileID: 21300000, guid: a83ed65df0592414cab2421a45f62bcb, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 47c7afb39cf3f834aa99c1ca7094b8d2, type: 3}
+      value: {fileID: 21300000, guid: 5d4477f31da6d044fa52b883d1771cd7, type: 3}
     - time: 0.75
-      value: {fileID: 21300000, guid: 67320ed4775a4574bb6438ee09930de2, type: 3}
+      value: {fileID: 21300000, guid: a1c6ce9f8ece01d4a9b8431f515a02b7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e3bfb27e0b95b634abb5b329ec4327e8, type: 3}
-    - {fileID: 21300000, guid: 5a344171d8aca3d42b09885c900cfd08, type: 3}
-    - {fileID: 21300000, guid: 47c7afb39cf3f834aa99c1ca7094b8d2, type: 3}
-    - {fileID: 21300000, guid: 67320ed4775a4574bb6438ee09930de2, type: 3}
+    - {fileID: 21300000, guid: 14703358806c0e145bed1676ee9d1f55, type: 3}
+    - {fileID: 21300000, guid: a83ed65df0592414cab2421a45f62bcb, type: 3}
+    - {fileID: 21300000, guid: 5d4477f31da6d044fa52b883d1771cd7, type: 3}
+    - {fileID: 21300000, guid: a1c6ce9f8ece01d4a9b8431f515a02b7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
