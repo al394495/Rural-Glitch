@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class BotonController : MonoBehaviour
 {
     public GameObject Imagen;
-    Animator animator;
+    public Animator animator;
+    public float tiempoIni = 0;
+    public float tiempoFin = 3;
 
     public GameObject cinematicaFinal;
     public VideoPlayer videoFinal;
@@ -17,17 +19,28 @@ public class BotonController : MonoBehaviour
         animator = Imagen.GetComponent<Animator>();
         cinematicaFinal.SetActive(false);
     }
+    private void Update()
+    {
+        
+    }
     public void PulsarBoton()
     {
         animator.SetBool("Pulsado", true);
-        cinematicaFinal.SetActive(true);
-        videoFinal = cinematicaFinal.GetComponent<VideoPlayer>();
-        videoFinal.Play();
-        videoFinal.loopPointReached += CheckOver;
+        
+
+
     }
 
     void CheckOver(VideoPlayer vp)
     {
         SceneManager.LoadScene("Menú");
+    }
+
+    void Cinematica()
+    {
+        cinematicaFinal.SetActive(true);
+        videoFinal = cinematicaFinal.GetComponent<VideoPlayer>();
+        videoFinal.Play();
+        videoFinal.loopPointReached += CheckOver;
     }
 }
