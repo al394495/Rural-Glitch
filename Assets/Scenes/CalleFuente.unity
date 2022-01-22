@@ -3655,6 +3655,7 @@ MonoBehaviour:
     name: Marta
     sentences:
     - Buah pues si gana el Juanjo me debes tu a mi diez euros.
+    - Vamos chicos!! Cada uno a su casa, que esta a punto de empezar!! Luego hablamos.
 --- !u!114 &2071342309
 MonoBehaviour:
   m_ObjectHideFlags: 0
