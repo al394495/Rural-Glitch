@@ -8,22 +8,10 @@ public class hud : MonoBehaviour
     public static bool mensaje = false;
     public AudioSource Vibracion;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.K))
-        {
-            if (mensaje == false)
-                mensaje = true;
-            else
-                mensaje = false;
-        }*/
         if (mensaje == true)
         {
             vibrar();

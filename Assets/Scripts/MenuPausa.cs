@@ -18,51 +18,12 @@ public class MenuPausa : MonoBehaviour
     Animator animator;
     public Animator abierto;
 
-    //public GameObject tutorial;
     // Start is called before the first frame update
     void Start()
     {
         animator = Imagen.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (DialogueManager.DialogoActivo == false)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (menuabierto == false)
-                {
-                    Imagen.SetActive(true);
-                    botonchat.SetActive(true);
-                    botoninternet.SetActive(true);
-                    botonconfiguracion.SetActive(true);
-                    botonsalida.SetActive(true);
-                    menuabierto = true;
-                    hud.mensaje = false;
-                }
-                else
-                {
-                    animator.SetBool("Chat", false);
-                    animator.SetBool("Internet", false);
-                    animator.SetBool("Chat-Marta", false);
-                    animator.SetBool("Vacio", false);
-                    Imagen.SetActive(false);
-                    botonchat.SetActive(false);
-                    botoninternet.SetActive(false);
-                    botonconfiguracion.SetActive(false);
-                    botonsalida.SetActive(false);
-                    botonatras.SetActive(false);
-                    menuabierto = false;
-                }
-            }
-        }*/
-        /*if (fintutorial)
-        {
-            tutorial.SetActive(false);
-        }*/
-    }
 
     public void PulsarHUD()
     {
@@ -70,11 +31,6 @@ public class MenuPausa : MonoBehaviour
         {
             if (menuabierto == false)
             {
-                /*Imagen.SetActive(true);
-                botonchat.SetActive(true);
-                botoninternet.SetActive(true);
-                botonconfiguracion.SetActive(true);
-                botonsalida.SetActive(true);*/
                 abierto.SetBool("abierto", true);
                 menuabierto = true;
                 fintutorial = true;
@@ -91,12 +47,7 @@ public class MenuPausa : MonoBehaviour
                 animator.SetBool("Chat-Marta", false);
                 animator.SetBool("Chat-Marta2", false);
                 animator.SetBool("Vacio", false);
-                /*Imagen.SetActive(false);
-                botonchat.SetActive(false);
-                botoninternet.SetActive(false);
-                botonconfiguracion.SetActive(false);
-                botonsalida.SetActive(false);
-                botonatras.SetActive(false);*/
+               
                 menuabierto = false;
 
             }
@@ -125,6 +76,7 @@ public class MenuPausa : MonoBehaviour
         {
             animator.SetBool("Vacio", true);
         }
+
         botonchat.SetActive(false);
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
@@ -150,6 +102,7 @@ public class MenuPausa : MonoBehaviour
         {
             animator.SetBool("Vacio", true);
         }
+
         botonchat.SetActive(false);
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);

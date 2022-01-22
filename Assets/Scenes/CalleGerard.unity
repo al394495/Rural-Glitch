@@ -288,7 +288,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6015625, y: 1}
+    m_SensorSize: {x: 1.7781093, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1685,9 +1685,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396.9999, y: 182}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.25, y: 0.5}
+  m_AnchoredPosition: {x: -399.7831, y: 181.56984}
+  m_SizeDelta: {x: 28.6033, y: 49.3582}
+  m_Pivot: {x: -0.58602875, y: 0.50000095}
 --- !u!82 &1393021614
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
+  m_Sprite: {fileID: 331141694863351228, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2098,7 +2098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505992913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.551028, y: -1.5493064, z: -10}
+  m_LocalPosition: {x: 14.551028, y: -1.5487843, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2625,6 +2625,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 550808627}
     m_Modifications:
+    - target: {fileID: 2755435993914749231, guid: 382a0ced91531d849a0505de7f0e7b7b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755435993914749231, guid: 382a0ced91531d849a0505de7f0e7b7b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 2755435993925904254, guid: 382a0ced91531d849a0505de7f0e7b7b, type: 3}
       propertyPath: m_RootOrder
       value: 2

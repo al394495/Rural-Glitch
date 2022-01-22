@@ -9,8 +9,6 @@ public class ColisionConGerard : MonoBehaviour
     {
         if (other.gameObject.name == "Gerard")
         {
-            //Añadir mensaje de fallo
-            //Añadir transición
             MainMenuScript.cambio = "glitches-casaGerard";
             SceneManager.LoadScene("CasaGerard");
         }
