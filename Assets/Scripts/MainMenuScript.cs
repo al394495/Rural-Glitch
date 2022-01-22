@@ -17,12 +17,6 @@ public class MainMenuScript : MonoBehaviour
         cinematicaInicial.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void EscenaJuego()
 
     {

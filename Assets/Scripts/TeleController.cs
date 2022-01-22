@@ -29,7 +29,6 @@ public class TeleController : MonoBehaviour
     void Update()
     {
 
-        //Debug.Log(clickon);
         if (Input.GetKeyDown(click) && clickon == true) {
 
             contador++;

@@ -8,8 +8,6 @@ public class BotonController : MonoBehaviour
 {
     public GameObject Imagen;
     public Animator animator;
-    public float tiempoIni = 0;
-    public float tiempoFin = 3;
 
     public GameObject cinematicaFinal;
     public VideoPlayer videoFinal;
@@ -19,15 +17,10 @@ public class BotonController : MonoBehaviour
         animator = Imagen.GetComponent<Animator>();
         cinematicaFinal.SetActive(false);
     }
-    private void Update()
-    {
-        
-    }
+    
     public void PulsarBoton()
     {
         animator.SetBool("Pulsado", true);
-        
-
 
     }
 

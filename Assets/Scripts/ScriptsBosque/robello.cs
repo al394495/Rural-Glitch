@@ -39,7 +39,6 @@ public class robello : MonoBehaviour {
             
             ContadorRobello.text = contadorRobellons.ToString();
             PickUp(robelloPorCoger);
-            //robelloPorCoger.SetActive(false);   //Probar con setActive
         }
             
             
