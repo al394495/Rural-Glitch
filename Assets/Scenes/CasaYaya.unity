@@ -327,9 +327,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -393.538, y: 178.66}
-  m_SizeDelta: {x: 95.379, y: 93.313}
-  m_Pivot: {x: 0.25, y: 0.5}
+  m_AnchoredPosition: {x: -401.33853, y: 177.0003}
+  m_SizeDelta: {x: 30.5733, y: 56.6112}
+  m_Pivot: {x: -0.6441169, y: 0.50000006}
 --- !u!114 &276784424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
+  m_Sprite: {fileID: 331141694863351228, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -998,7 +998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563058085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7409468, y: -1.7954192, z: -10}
+  m_LocalPosition: {x: -3.7417173, y: -1.7954192, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1518,7 +1518,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7799999, y: 1}
+    m_SensorSize: {x: 1.7797295, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

@@ -205,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74594560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2146368, y: -0.79995966, z: -10}
+  m_LocalPosition: {x: -1.4839106, y: -0.7621844, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -854,7 +854,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6015625, y: 1}
+    m_SensorSize: {x: 1.7797295, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1003,10 +1003,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 18.949917, y: 2.4473124}
+    - - {x: 18.696941, y: 2.4862313}
       - {x: -11.949399, y: 2.5046313}
       - {x: -12.002988, y: -5.7576246}
-      - {x: 19.025522, y: -5.7454453}
+      - {x: 18.694712, y: -5.6676073}
 --- !u!4 &857217110
 Transform:
   m_ObjectHideFlags: 0
@@ -1058,9 +1058,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396.9999, y: 182}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.25, y: 0.5}
+  m_AnchoredPosition: {x: -400.21664, y: 182.8}
+  m_SizeDelta: {x: 29.4335, y: 50.1882}
+  m_Pivot: {x: -0.5863334, y: 0.5}
 --- !u!82 &859249670
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
+  m_Sprite: {fileID: 331141694863351228, guid: bd6888d00cc67404d980b7330d71942e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1372,8 +1372,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923129082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.5699997, y: -0.77, z: 0}
-  m_LocalScale: {x: 0.765053, y: 0.765053, z: 0.765053}
+  m_LocalPosition: {x: 6.541, y: -0.7664, z: 0}
+  m_LocalScale: {x: 0.76650655, y: 0.7643644, z: 0.765053}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
