@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VariablesGlobales : MonoBehaviour
 {
-    public static int dia;
+    public static int dia = 3;
 
     public static bool cinematica;
 
