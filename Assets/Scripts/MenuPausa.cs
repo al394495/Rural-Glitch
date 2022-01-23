@@ -13,7 +13,10 @@ public class MenuPausa : MonoBehaviour
     public GameObject botoninternet;
     public GameObject botonconfiguracion;
     public GameObject botonsalida;
+    public GameObject botonubicacion;
     public GameObject botonatras;
+
+    public GameObject menu_salida;
 
     Animator animator;
     public Animator abierto;
@@ -47,6 +50,7 @@ public class MenuPausa : MonoBehaviour
                 animator.SetBool("Chat-Marta", false);
                 animator.SetBool("Chat-Marta2", false);
                 animator.SetBool("Vacio", false);
+                animator.SetBool("Tienda", false);
                
                 menuabierto = false;
 
@@ -81,6 +85,7 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
         botonatras.SetActive(true);
     }
 
@@ -92,7 +97,7 @@ public class MenuPausa : MonoBehaviour
         }
         else if (VariablesGlobales.minijuegoRealizado1 && VariablesGlobales.minijuegoRealizado2 == false)
         {
-            animator.SetBool("Mapa", true);
+            animator.SetBool("Tienda", true);
         }
         else if (VariablesGlobales.dia == 2 && VariablesGlobales.amigos < 3)
         {
@@ -107,12 +112,46 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
         botonatras.SetActive(true);
     }
 
     public void PulsarBotonSalida()
     {
+        menu_salida.SetActive(true);
+        botonchat.SetActive(false);
+        botoninternet.SetActive(false);
+        botonconfiguracion.SetActive(false);
+        botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
+    }
+
+    public void PulsarSí()
+    {
+        menu_salida.SetActive(false);
         SceneManager.LoadScene("Menú");
+    }
+
+    public void PulsarNo()
+    {
+        menu_salida.SetActive(false);
+        botonchat.SetActive(true);
+        botoninternet.SetActive(true);
+        botonconfiguracion.SetActive(true);
+        botonsalida.SetActive(true);
+        botonubicacion.SetActive(true);
+    }
+
+    public void PulsarBotonUbicacion()
+    {
+        animator.SetBool("Mapa", true);
+
+        botonchat.SetActive(false);
+        botoninternet.SetActive(false);
+        botonconfiguracion.SetActive(false);
+        botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
+        botonatras.SetActive(true);
     }
 
     public void PulsarBotonAtras()
@@ -125,11 +164,13 @@ public class MenuPausa : MonoBehaviour
         animator.SetBool("Chat-Marta", false);
         animator.SetBool("Chat-Marta2", false);
         animator.SetBool("Vacio", false);
+        animator.SetBool("Tienda", false);
         botonatras.SetActive(false);
         botonchat.SetActive(true);
         botoninternet.SetActive(true);
         botonconfiguracion.SetActive(true);
         botonsalida.SetActive(true);
+        botonubicacion.SetActive(true);
     }
 
 }
