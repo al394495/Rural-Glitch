@@ -13,6 +13,7 @@ public class MenuPausa : MonoBehaviour
     public GameObject botoninternet;
     public GameObject botonconfiguracion;
     public GameObject botonsalida;
+    public GameObject botonubicacion;
     public GameObject botonatras;
 
     Animator animator;
@@ -47,6 +48,7 @@ public class MenuPausa : MonoBehaviour
                 animator.SetBool("Chat-Marta", false);
                 animator.SetBool("Chat-Marta2", false);
                 animator.SetBool("Vacio", false);
+                animator.SetBool("Tienda", false);
                
                 menuabierto = false;
 
@@ -81,6 +83,7 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
         botonatras.SetActive(true);
     }
 
@@ -107,12 +110,25 @@ public class MenuPausa : MonoBehaviour
         botoninternet.SetActive(false);
         botonconfiguracion.SetActive(false);
         botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
         botonatras.SetActive(true);
     }
 
     public void PulsarBotonSalida()
     {
         SceneManager.LoadScene("Menú");
+    }
+
+    public void PulsarBotonUbicacion()
+    {
+        animator.SetBool("Mapa", true);
+
+        botonchat.SetActive(false);
+        botoninternet.SetActive(false);
+        botonconfiguracion.SetActive(false);
+        botonsalida.SetActive(false);
+        botonubicacion.SetActive(false);
+        botonatras.SetActive(true);
     }
 
     public void PulsarBotonAtras()
@@ -125,11 +141,13 @@ public class MenuPausa : MonoBehaviour
         animator.SetBool("Chat-Marta", false);
         animator.SetBool("Chat-Marta2", false);
         animator.SetBool("Vacio", false);
+        animator.SetBool("Tienda", false);
         botonatras.SetActive(false);
         botonchat.SetActive(true);
         botoninternet.SetActive(true);
         botonconfiguracion.SetActive(true);
         botonsalida.SetActive(true);
+        botonubicacion.SetActive(true);
     }
 
 }
