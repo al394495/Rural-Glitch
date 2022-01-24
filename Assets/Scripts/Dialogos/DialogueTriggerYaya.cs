@@ -20,7 +20,7 @@ public class DialogueTriggerYaya : MonoBehaviour
         }
         else if (VariablesGlobales.bebidasRecogidas == false)
         {
-            if (robello.contadorRobellons < 5)
+            if (VariablesGlobales.contadorRobellons < 5)
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogoNoRebollons);
             else
             {

@@ -26,5 +26,10 @@ public class MusicManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (VariablesGlobales.cinematicaFin == true)
+        {
+            Destroy(gameObject);
+        }
     }
 }
