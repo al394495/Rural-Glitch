@@ -21,6 +21,7 @@ public class BotonController : MonoBehaviour
     public void PulsarBoton()
     {
         animator.SetBool("Pulsado", true);
+        VariablesGlobales.cinematicaFin = true;
 
     }
 

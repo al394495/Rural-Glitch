@@ -11,15 +11,19 @@ public class MainMenuScript : MonoBehaviour
     public GameObject cinematicaInicial;
     public VideoPlayer videoInicial;
     public AudioSource click;
+    public static bool play;
+
     // Start is called before the first frame update
     void Start()
     {
         cinematicaInicial.SetActive(false);
+        play = false;
     }
 
     public void EscenaJuego()
 
     {
+        play = true;
         cinematicaInicial.SetActive(true);
         videoInicial = cinematicaInicial.GetComponent<VideoPlayer>();
         videoInicial.Play();

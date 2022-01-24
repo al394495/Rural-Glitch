@@ -12,7 +12,7 @@ public class robello : MonoBehaviour {
 
     private bool pickUpAllowed;
    
-    public static int contadorRobellons = 0;
+    
     public Text ContadorRobello;
     public static GameObject robelloPorCoger;
 
@@ -24,7 +24,7 @@ public class robello : MonoBehaviour {
     private void Start()
 
     {
-        ContadorRobello.text = contadorRobellons.ToString();
+        ContadorRobello.text = VariablesGlobales.contadorRobellons.ToString();
         pickUpText.gameObject.SetActive(false);
     }
 
@@ -35,9 +35,9 @@ public class robello : MonoBehaviour {
         {
             setaSonido.Play();
 
-            contadorRobellons++;
+            VariablesGlobales.contadorRobellons++;
             
-            ContadorRobello.text = contadorRobellons.ToString();
+            ContadorRobello.text = VariablesGlobales.contadorRobellons.ToString();
             PickUp(robelloPorCoger);
         }
             

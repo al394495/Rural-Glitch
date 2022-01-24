@@ -7,8 +7,10 @@ public class Tutorial : MonoBehaviour
     public GameObject[] popUps;
     public static int popupIndex;
     public GameObject tutorial;
+    public GameObject boton;
 
     public static bool fin = false;
+    public bool click = false;
     void Update()
     {
 
@@ -35,14 +37,22 @@ public class Tutorial : MonoBehaviour
             if (MenuPausa.fintutorial == true)
             {
                 popupIndex++;
-                fin = true;
             }
         }
-        else if(popupIndex == 2)
+        else if (popupIndex == 2)
         {
             popUps[popupIndex].SetActive(true);
         }
+        else if(popupIndex == 3)
+        {
+            popUps[popupIndex].SetActive(true);
+        }
+    }
 
-        
+    public void clickok()
+    {
+        popupIndex++;
+        fin = true;
+        Debug.Log("XD");
     }
 }

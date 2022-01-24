@@ -7,6 +7,8 @@ public class VariablesGlobales : MonoBehaviour
     public static int dia;
 
     public static bool cinematica;
+    public static bool cinematicaFin;
+    public static int contadorRobellons;
 
     public static bool minijuego1;
 
